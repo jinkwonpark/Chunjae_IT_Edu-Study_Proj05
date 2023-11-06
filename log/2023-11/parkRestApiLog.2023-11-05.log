@@ -1,0 +1,150 @@
+2023-11-05 17:23:52.574 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 31220 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-05 17:23:52.578 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-05 17:23:52.630 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 17:23:52.630 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 17:23:53.953 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-05 17:23:53.957 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:23:53.957 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-05 17:23:53.957 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-05 17:23:54.043 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-05 17:23:54.043 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1413 ms
+2023-11-05 17:23:54.137 WARN  [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardCtrl': Unsatisfied dependency expressed through field 'boardService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl': Unsatisfied dependency expressed through field 'boardMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardMapper' defined in file [C:\park\springbootstudy\build\classes\java\main\com\chunjae\springbootstudy\persis\BoardMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-11-05 17:23:54.146 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-05 17:23:54.164 INFO  [restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-05 17:23:54.206 ERROR [restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-11-05 17:28:15.622 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 21904 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-05 17:28:15.629 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-05 17:28:15.715 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 17:28:15.715 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 17:28:16.952 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-05 17:28:16.959 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:28:16.960 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-05 17:28:16.960 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-05 17:28:17.025 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-05 17:28:17.025 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1309 ms
+2023-11-05 17:28:17.100 WARN  [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardCtrl': Unsatisfied dependency expressed through field 'boardService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl': Unsatisfied dependency expressed through field 'boardMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardMapper' defined in file [C:\park\springbootstudy\build\classes\java\main\com\chunjae\springbootstudy\persis\BoardMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-11-05 17:28:17.103 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-05 17:28:17.115 INFO  [restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-05 17:28:17.130 ERROR [restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-11-05 17:29:25.000 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 7432 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-05 17:29:25.004 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-05 17:29:25.057 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 17:29:25.057 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 17:29:26.457 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-05 17:29:26.464 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:29:26.465 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-05 17:29:26.465 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-05 17:29:26.532 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-05 17:29:26.533 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1476 ms
+2023-11-05 17:29:26.602 WARN  [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardCtrl': Unsatisfied dependency expressed through field 'boardService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardServiceImpl': Unsatisfied dependency expressed through field 'boardMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardMapper' defined in file [C:\park\springbootstudy\build\classes\java\main\com\chunjae\springbootstudy\persis\BoardMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-11-05 17:29:26.604 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-05 17:29:26.618 INFO  [restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-05 17:29:26.638 ERROR [restartedMain] [o.s.b.d.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-11-05 17:33:36.799 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 32660 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-05 17:33:36.803 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-05 17:33:36.854 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 17:33:36.855 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 17:33:38.044 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-05 17:33:38.054 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:33:38.056 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-05 17:33:38.056 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-05 17:33:38.128 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-05 17:33:38.128 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1273 ms
+2023-11-05 17:33:38.672 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: f9fb2abd-1cf4-42b4-8530-dec12badb949
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-05 17:33:38.765 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cf60075, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e786579, org.springframework.security.web.context.SecurityContextPersistenceFilter@570ce7e7, org.springframework.security.web.header.HeaderWriterFilter@7dfff85d, org.springframework.security.web.csrf.CsrfFilter@67431ade, org.springframework.security.web.authentication.logout.LogoutFilter@6ad66ff5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f7b911d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f9e12e4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3e687a40, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a7904a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@152c1191, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ee8398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@512e1be7, org.springframework.security.web.session.SessionManagementFilter@559bb011, org.springframework.security.web.access.ExceptionTranslationFilter@657e8fbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46e97205]
+2023-11-05 17:33:38.810 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-05 17:33:38.831 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:33:38.848 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-05 17:33:38.861 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 2.5 seconds (JVM running for 3.244)
+2023-11-05 17:34:02.437 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 17:34:02.437 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-05 17:34:02.438 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-05 17:35:35.653 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 30220 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-05 17:35:35.656 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-05 17:35:35.707 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 17:35:35.708 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 17:35:36.865 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-05 17:35:36.872 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:35:36.873 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-05 17:35:36.873 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-05 17:35:36.943 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-05 17:35:36.943 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1235 ms
+2023-11-05 17:35:37.498 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 1362254b-3bdd-420f-9940-2271273b0b4d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-05 17:35:37.579 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15e0a1a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71780596, org.springframework.security.web.context.SecurityContextPersistenceFilter@2859821d, org.springframework.security.web.header.HeaderWriterFilter@47730a5a, org.springframework.security.web.csrf.CsrfFilter@4ad2fb05, org.springframework.security.web.authentication.logout.LogoutFilter@42e5b555, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7feb67c8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@419c8d52, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d87cadf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33eae2d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c1f18e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a7a8af3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f2e481a, org.springframework.security.web.session.SessionManagementFilter@6dfee19c, org.springframework.security.web.access.ExceptionTranslationFilter@2630ba55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ded854e]
+2023-11-05 17:35:37.624 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-05 17:35:37.649 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-05 17:35:37.666 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-05 17:35:37.678 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 2.495 seconds (JVM running for 3.303)
+2023-11-05 17:36:10.441 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 17:36:10.441 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-05 17:36:10.448 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms

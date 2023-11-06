@@ -1,0 +1,146 @@
+2023-11-06 09:09:40.323 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:09:40.330 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:09:40.396 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-06 09:09:40.397 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-06 09:09:41.794 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:09:41.801 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:09:41.803 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:09:41.803 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:09:41.871 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:09:41.871 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1474 ms
+2023-11-06 09:09:42.527 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: f4da8159-a8f9-4307-b835-41e39dbd1d61
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:09:42.659 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59cd7f6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@351f27f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@359eb14c, org.springframework.security.web.header.HeaderWriterFilter@4ec4ed7d, org.springframework.security.web.csrf.CsrfFilter@6a6620c1, org.springframework.security.web.authentication.logout.LogoutFilter@1a90e889, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e4216c3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e8543d3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5bc1470d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c541d5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d51603a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b33a123, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f80056f, org.springframework.security.web.session.SessionManagementFilter@2766b693, org.springframework.security.web.access.ExceptionTranslationFilter@2b45432f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b3cc69a]
+2023-11-06 09:09:42.715 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:09:42.738 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:09:42.767 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:09:42.784 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 2.918 seconds (JVM running for 4.572)
+2023-11-06 09:11:21.791 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-11-06 09:11:21.808 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:11:21.809 INFO  [Thread-5] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-06 09:11:21.815 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:11:21.817 INFO  [Thread-5] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:11:21.897 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:11:21.897 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:11:22.203 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:11:22.203 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:11:22.204 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:11:22.204 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:11:22.221 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:11:22.221 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 320 ms
+2023-11-06 09:11:22.359 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 2fa6f350-4ba2-465a-affb-36c4eebefa54
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:11:22.365 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1765f7cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5458a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@239bf48e, org.springframework.security.web.header.HeaderWriterFilter@233c6626, org.springframework.security.web.csrf.CsrfFilter@1729f554, org.springframework.security.web.authentication.logout.LogoutFilter@44f5dec4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8965528, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d28bcf8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a517291, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@257b78b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b05573, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@477d0ef5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44113b9a, org.springframework.security.web.session.SessionManagementFilter@7b403de7, org.springframework.security.web.access.ExceptionTranslationFilter@705a9ab4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@607eeb0c]
+2023-11-06 09:11:22.372 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:11:22.379 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:11:22.383 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:11:22.389 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 0.535 seconds (JVM running for 104.177)
+2023-11-06 09:11:22.392 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-06 09:12:42.053 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2023-11-06 09:12:42.069 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:12:42.071 INFO  [Thread-7] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-06 09:12:42.073 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:12:42.076 INFO  [Thread-7] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:12:42.152 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:12:42.152 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:12:42.437 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:12:42.438 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:12:42.438 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:12:42.439 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:12:42.457 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:12:42.458 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 303 ms
+2023-11-06 09:12:42.601 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: c0d553d7-4de0-41ff-beb2-08893d403818
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:12:42.612 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@698c4a65, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9b47cd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@78b6e0c8, org.springframework.security.web.header.HeaderWriterFilter@6310dee8, org.springframework.security.web.csrf.CsrfFilter@3492df0e, org.springframework.security.web.authentication.logout.LogoutFilter@421b7fc1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4093a065, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d7e1435, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@54f9650a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@74e3d73f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@358604b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@665a0956, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ec90a85, org.springframework.security.web.session.SessionManagementFilter@5afe2e36, org.springframework.security.web.access.ExceptionTranslationFilter@5405e20f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ac753e6]
+2023-11-06 09:12:42.623 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:12:42.631 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:12:42.635 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:12:42.638 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 0.516 seconds (JVM running for 184.427)
+2023-11-06 09:12:42.640 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-06 09:15:36.167 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2023-11-06 09:15:36.184 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:15:36.185 INFO  [Thread-11] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-06 09:15:36.188 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:15:36.189 INFO  [Thread-11] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:15:36.278 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:15:36.278 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:15:36.523 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:15:36.523 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:15:36.524 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:15:36.524 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:15:36.546 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:15:36.546 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 265 ms
+2023-11-06 09:15:36.694 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: fa6e44e2-07c8-42e3-b01c-1a5e18d0cca7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:15:36.702 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4dc83b1c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33b21592, org.springframework.security.web.context.SecurityContextPersistenceFilter@790fbe4b, org.springframework.security.web.header.HeaderWriterFilter@555a778f, org.springframework.security.web.csrf.CsrfFilter@528b923a, org.springframework.security.web.authentication.logout.LogoutFilter@4827e07e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@661ed3b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d91c0b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a332eea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5de1af55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a4c506f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cacaca6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a78a5fe, org.springframework.security.web.session.SessionManagementFilter@779bf8c0, org.springframework.security.web.access.ExceptionTranslationFilter@d1bd174, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a189384]
+2023-11-06 09:15:36.714 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:15:36.727 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:15:36.732 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:15:36.736 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 0.497 seconds (JVM running for 358.524)
+2023-11-06 09:15:36.738 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-06 09:16:42.992 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2023-11-06 09:16:43.009 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:16:43.009 INFO  [Thread-15] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-06 09:16:43.011 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:16:43.013 INFO  [Thread-15] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:16:43.077 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:16:43.077 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:16:43.368 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:16:43.369 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:16:43.369 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:16:43.369 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:16:43.401 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:16:43.401 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 322 ms
+2023-11-06 09:16:43.538 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 8cc6283f-1fc4-485f-843f-d92d2c7d5632
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:16:43.544 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77d3c024, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b583c63, org.springframework.security.web.context.SecurityContextPersistenceFilter@43fbcc16, org.springframework.security.web.header.HeaderWriterFilter@5c2de9fd, org.springframework.security.web.csrf.CsrfFilter@187caf16, org.springframework.security.web.authentication.logout.LogoutFilter@7bbb31f5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68b04400, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55f2770f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2122e14c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5c68d077, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e8fae7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d5ec453, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b537677, org.springframework.security.web.session.SessionManagementFilter@3e02d0df, org.springframework.security.web.access.ExceptionTranslationFilter@24e52394, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@789885f8]
+2023-11-06 09:16:43.550 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:16:43.558 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:16:43.561 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:16:43.565 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 0.514 seconds (JVM running for 425.354)
+2023-11-06 09:16:43.566 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2023-11-06 09:21:50.079 INFO  [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2023-11-06 09:21:50.094 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:21:50.094 INFO  [Thread-19] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-11-06 09:21:50.096 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:21:50.098 INFO  [Thread-19] [o.apache.coyote.http11.Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:21:50.191 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.8 on GB3P_KWONA with PID 27420 (C:\park\springbootstudy\build\classes\java\main started by jk347 in C:\park\springbootstudy)
+2023-11-06 09:21:50.192 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-06 09:21:50.487 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-06 09:21:50.488 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:21:50.488 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-06 09:21:50.488 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-06 09:21:50.505 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-06 09:21:50.505 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 311 ms
+2023-11-06 09:21:50.669 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 51f0ddcf-b6cf-47cb-90e7-b19e388f0a29
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-06 09:21:50.682 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e2c3218, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b5d4dd7, org.springframework.security.web.context.SecurityContextPersistenceFilter@18c1b30f, org.springframework.security.web.header.HeaderWriterFilter@7e91e62e, org.springframework.security.web.csrf.CsrfFilter@1ef43872, org.springframework.security.web.authentication.logout.LogoutFilter@3194d8e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d354240, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c500006, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@cad23be, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68a3af0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13e778e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62b64c24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@790316de, org.springframework.security.web.session.SessionManagementFilter@27c9382c, org.springframework.security.web.access.ExceptionTranslationFilter@816582, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f0409a]
+2023-11-06 09:21:50.697 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-06 09:21:50.706 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-06 09:21:50.709 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-06 09:21:50.715 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 0.563 seconds (JVM running for 732.503)
+2023-11-06 09:21:50.717 INFO  [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
