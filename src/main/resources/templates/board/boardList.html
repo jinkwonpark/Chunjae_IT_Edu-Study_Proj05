@@ -9,7 +9,7 @@
 <body>
     <div>
         <div>
-            <h3>자유게시판 목록</h3>
+            <h2>자유게시판 목록</h2>
         </div>
         <table>
             <thead>
@@ -22,15 +22,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="b : ${boardList}">
-                    <td th:text="${b.bno}"></td>
-                    <td th:text="${b.title}"></td>
-                    <td th:text="${b.author}"></td>
-                    <td th:text="${b.regdate}"></td>
-                    <td th:text="${b.visited}"></td>
+                <tr th:each="bl : ${boardList}">
+                    <td th:text="${bl.bno}"></td>
+                    <td><a th:href="@{'/board/boardDetail?bno=' + ${bl.bno}}"><span th:text="${bl.title}"></span></a></td>
+                    <td th:text="${bl.author}"></td>
+                    <td th:text="${bl.regdate}"></td>
+                    <td th:text="${bl.visited}"></td>
                 </tr>
             </tbody>
         </table>
+        <a th:href="@{'/board/boardInsert'}"><button>글쓰기</button></a>
     </div>
 </body>
 </html>

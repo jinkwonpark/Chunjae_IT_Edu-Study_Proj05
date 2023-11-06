@@ -7,15 +7,17 @@
     <title>자유게시판 상세보기</title>
 </head>
 <body>
-    <div class="container">
-        <table th:text="">
-            <thead>
-
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
+    <div>
+        <div>
+            <h2>자유게시판 상세보기</h2>
+        </div>
+        <div class="container">
+                <ul>
+                    <li><span th:text="${bd.bno}"></span></li>
+                    <li><span th:text="${bd.title}"></span></li>
+                    <li><span th:text="${bd.content}"></span></li>
+                </ul>
+        </div>
     </div>
 </body>
 </html>

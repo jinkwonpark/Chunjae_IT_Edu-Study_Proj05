@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,7 @@ public class BoardCtrl {
     @Autowired
     private BoardService boardService;
 
+    // 자유게시판 목록
     @GetMapping("boardList")
     public String boardList(Model model) {
         List<Board> boardList = boardService.boardList();
@@ -24,9 +26,32 @@ public class BoardCtrl {
         return "board/boardList";
     }
 
+    // 자유게시판 상세보기
     @GetMapping("boardDetail")
     public String boardDetail(HttpServletRequest request, Model model) {
         int bno = Integer.parseInt(request.getParameter("bno"));
+        Board boardDetail = boardService.boardDetail(bno);
+        model.addAttribute("bd", boardDetail);
         return "/board/boardDetail";
     }
+
+    // 자유게시판 글쓰기
+    @GetMapping("boardInsert")
+    public String boardInsertForm(HttpServletRequest request, Model model) throws  Exception {
+        return "/board/boardInsert";
+    }
+
+    @PostMapping("boardInsert")
+    public String boardInsert(HttpServletRequest request, Model model)throws Exception {
+        Board boardInsert = new Board();
+        boardInsert.setTitle(request.getParameter("title"));
+        boardInsert.setContent(request.getParameter("content"));
+        boardService.boardInsert(boardInsert);
+        return "redirect:boardDetail";
+    }
+//    // 자유게시판 수정하기
+//    @GetMapping("boardEdit")
+//
+//    // 자유게시판 글 삭제하기
+//    @GetMapping("boardDelete")
 }

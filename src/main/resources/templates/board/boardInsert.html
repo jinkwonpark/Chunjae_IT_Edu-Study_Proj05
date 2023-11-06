@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>자유게시판 작성하기</title>
+    <title>자유게시판 글쓰기</title>
 </head>
 <body>
-
+    <div>
+        <div>
+            <h2>자유게시판 글쓰기</h2>
+        </div>
+        <div class="container">
+            <form th:action="@{'/board/boardInsert'}" method="post">
+                <table>
+                    <div>
+                        <tr>
+                            <th>글 제목</th>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <th>글 내용</th>
+                            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <button type="submit">글쓰기</button>
+                            <button type="reset">취소</button>
+                            <a th:href="@{'/board/boardDetail'}"><button>글목록</button></a>
+                        </tr>
+                    </div>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
