@@ -34,3 +34,11 @@ CREATE TABLE board(
 	regdate TIMESTAMP DEFAULT CURRENT_TIME,
 	visited INT DEFAULT 0
 );
+
+INSERT INTO board VALUES (DEFAULT, '자유게시판 제목1', '자유게시판 내용1 입니다', DEFAULT, DEFAULT);
+INSERT INTO board VALUES (DEFAULT, '자유게시판 제목2', '자유게시판 내용2 입니다', DEFAULT, DEFAULT);
+INSERT INTO board VALUES (DEFAULT, '자유게시판 제목3', '자유게시판 내용3 입니다', DEFAULT, DEFAULT);
+INSERT INTO board VALUES (DEFAULT, '자유게시판 제목4', '자유게시판 내용4 입니다', DEFAULT, DEFAULT);
+INSERT INTO board VALUES (DEFAULT, '자유게시판 제목5', '자유게시판 내용5 입니다', DEFAULT, DEFAULT);
+
+COMMIT;

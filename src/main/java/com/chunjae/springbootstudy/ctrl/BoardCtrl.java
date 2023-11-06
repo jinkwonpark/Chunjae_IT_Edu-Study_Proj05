@@ -8,10 +8,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
-@RequestMapping("/board/")
+@RequestMapping("/board/*")
 public class BoardCtrl {
     @Autowired
     private BoardService boardService;
@@ -20,6 +21,12 @@ public class BoardCtrl {
     public String boardList(Model model) {
         List<Board> boardList = boardService.boardList();
         model.addAttribute("boardList", boardList);
-        return "/board/boardList";
+        return "board/boardList";
+    }
+
+    @GetMapping("boardDetail")
+    public String boardDetail(HttpServletRequest request, Model model) {
+        int bno = Integer.parseInt(request.getParameter("bno"));
+        return "/board/boardDetail";
     }
 }
