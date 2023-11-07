@@ -12,11 +12,19 @@
             <h2>자유게시판 상세보기</h2>
         </div>
         <div class="container">
-                <ul>
-                    <li><span th:text="${bd.bno}"></span></li>
-                    <li><span th:text="${bd.title}"></span></li>
-                    <li><span th:text="${bd.content}"></span></li>
-                </ul>
+            <table>
+                <tr>
+                    <td><span th:text="${bd.bno}"></span></td>
+                    <th><span th:text="${bd.title}"></span></th>
+                </tr>
+                <tr>
+                    <td><span th:text="${bd.content}"></span></td>
+                </tr>
+                <tr>
+                    <a th:href="@{'/board/boardEdit?bno=' + ${bd.bno}}"><button>수정</button></a>
+                    <a th:href="@{'/board/boardDelete?bno=' + ${bd.bno}}"><button>삭제</button></a>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

@@ -35,23 +35,29 @@ public class BoardCtrl {
         return "/board/boardDetail";
     }
 
+    // 자유게시판 글 삭제하기
+    @GetMapping("boardDelete")
+    public String boardDelete(HttpServletRequest request, Model model) {
+        int bno = Integer.parseInt(request.getParameter("bno"));
+        boardService.boardDelete(bno);
+        return "redirect:boardList";
+    }
+
     // 자유게시판 글쓰기
     @GetMapping("boardInsert")
-    public String boardInsertForm(HttpServletRequest request, Model model) throws  Exception {
+    public String boardInsertForm(HttpServletRequest request, Model model) {
         return "/board/boardInsert";
     }
 
     @PostMapping("boardInsert")
-    public String boardInsert(HttpServletRequest request, Model model)throws Exception {
+    public String boardInsert(HttpServletRequest request, Model model) {
         Board boardInsert = new Board();
         boardInsert.setTitle(request.getParameter("title"));
         boardInsert.setContent(request.getParameter("content"));
         boardService.boardInsert(boardInsert);
-        return "redirect:boardDetail";
+        return "redirect:boardList";
     }
 //    // 자유게시판 수정하기
 //    @GetMapping("boardEdit")
-//
-//    // 자유게시판 글 삭제하기
-//    @GetMapping("boardDelete")
+
 }
