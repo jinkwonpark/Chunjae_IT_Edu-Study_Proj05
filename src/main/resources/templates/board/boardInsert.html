@@ -12,27 +12,28 @@
         <div class="container">
             <form th:action="@{'/board/boardInsert'}" method="post">
                 <table>
-                    <div>
-                        <tr>
-                            <th>글 제목</th>
-                            <td>
-                                <input type="text">
-                            </td>
-                        </tr>
-                    </div>
-                    <div>
-                        <tr>
-                            <th>글 내용</th>
-                            <textarea name="content" id="content" cols="30" rows="10"></textarea>
-                        </tr>
-                    </div>
-                    <div>
-                        <tr>
+                    <tr>
+                        <th>글 제목</th>
+                        <td>
+                            <input type="text" name="title" id="title" placeholder="제목을 입력해주세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>글 내용</th>
+                        <td>
+                            <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
                             <button type="submit">글쓰기</button>
+                            &nbsp;
                             <button type="reset">취소</button>
-                            <a th:href="@{'/board/boardDetail'}"><button>글목록</button></a>
-                        </tr>
-                    </div>
+                            &nbsp;
+                            <a href="/board/boardList">글목록1</a>
+                            <button type="button" onclick="location.href='/board/boardList'">글목록2</button>
+                        </td>
+                    </tr>
                 </table>
             </form>
         </div>
