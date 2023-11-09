@@ -59,7 +59,24 @@ public class BoardCtrl {
         boardService.boardInsert(boardInsert);
         return "redirect:boardList";
     }
-//    // 자유게시판 수정하기
-//    @GetMapping("boardEdit")
 
+    // 자유게시판 수정하기
+    @GetMapping("boardEdit")
+    public String boardEdit(HttpServletRequest request, Model model) {
+        int bno = Integer.parseInt(request.getParameter("bno"));
+        Board boardEdit = boardService.boardDetail(bno);
+        model.addAttribute("boardEdit", boardEdit);
+        return "board/boardEdit";
+    }
+
+    @PostMapping("boardEdit")
+    public String noticeEdit(HttpServletRequest request, Model model) {
+        int bno = Integer.parseInt(request.getParameter("bno"));
+        Board boardEdit = new Board();
+        boardEdit.setBno(bno);
+        boardEdit.setTitle(request.getParameter("title"));
+        boardEdit.setContent(request.getParameter("content"));
+        boardService.boardEdit(boardEdit);
+        return "redirect:boardList";
+    }
 }

@@ -1,0 +1,136 @@
+2023-11-08 14:21:22.828 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 376 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-08 14:21:22.831 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-08 14:21:22.858 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-08 14:21:22.858 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-08 14:21:23.442 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-08 14:21:23.447 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:21:23.447 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-08 14:21:23.448 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-08 14:21:23.489 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-08 14:21:23.489 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 631 ms
+2023-11-08 14:21:23.628 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 79c2341e-2cae-4869-8df6-53b854c47a71
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-08 14:21:23.658 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:21:23.658 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-08 14:21:23.659 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:21:23.659 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-08 14:21:23.659 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:21:23.659 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2023-11-08 14:21:23.681 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ff31bb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15fc58b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f5d27d8, org.springframework.security.web.header.HeaderWriterFilter@3fe83c18, org.springframework.security.web.authentication.logout.LogoutFilter@5ec7f42c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f510973, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7238c712, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a65706c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@340c628e, org.springframework.security.web.session.SessionManagementFilter@3eed8e0c, org.springframework.security.web.access.ExceptionTranslationFilter@180c93a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7649697b]
+2023-11-08 14:21:23.836 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-08 14:21:23.845 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:21:23.855 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-08 14:21:23.862 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.236 seconds (JVM running for 1.651)
+2023-11-08 14:21:49.247 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 14:21:49.247 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-08 14:21:49.248 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-08 14:21:51.894 WARN  [http-nio-8085-exec-2] [o.s.web.servlet.PageNotFound] - No mapping for GET /login
+2023-11-08 14:21:53.203 INFO  [http-nio-8085-exec-4] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-11-08 14:21:53.276 INFO  [http-nio-8085-exec-4] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-11-08 14:24:52.962 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-11-08 14:24:52.965 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-11-08 14:24:54.505 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 544 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-08 14:24:54.507 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-08 14:24:54.531 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-08 14:24:54.531 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-08 14:24:55.091 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-08 14:24:55.095 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:24:55.097 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-08 14:24:55.097 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-08 14:24:55.136 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-08 14:24:55.137 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 606 ms
+2023-11-08 14:24:55.266 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 021c0309-ae32-4bd5-a7ce-c73985e7389e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-08 14:24:55.298 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:24:55.298 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-08 14:24:55.298 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:24:55.298 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-08 14:24:55.298 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:24:55.298 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2023-11-08 14:24:55.318 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51c18b62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25417920, org.springframework.security.web.context.SecurityContextPersistenceFilter@9234001, org.springframework.security.web.header.HeaderWriterFilter@7416f117, org.springframework.security.web.authentication.logout.LogoutFilter@ab7a563, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4aeb59c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39e83c2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18330302, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25775290, org.springframework.security.web.session.SessionManagementFilter@709fcfd6, org.springframework.security.web.access.ExceptionTranslationFilter@1ee9bc73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bb09fb4]
+2023-11-08 14:24:55.468 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-08 14:24:55.477 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:24:55.490 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-08 14:24:55.498 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.177 seconds (JVM running for 1.579)
+2023-11-08 14:26:06.948 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 14:26:06.948 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-08 14:26:06.949 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-08 14:26:07.819 INFO  [http-nio-8085-exec-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-11-08 14:26:07.863 INFO  [http-nio-8085-exec-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-11-08 14:30:16.996 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-11-08 14:30:16.998 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-11-08 14:30:18.558 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 15692 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-08 14:30:18.559 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-08 14:30:18.582 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-08 14:30:18.582 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-08 14:30:19.133 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-08 14:30:19.142 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:30:19.143 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-08 14:30:19.143 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-08 14:30:19.182 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-08 14:30:19.183 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 601 ms
+2023-11-08 14:30:19.311 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 673fd4e7-755b-437f-8b9f-d539cf9e106d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-08 14:30:19.345 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:30:19.345 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-08 14:30:19.345 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:30:19.345 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-08 14:30:19.345 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:30:19.345 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2023-11-08 14:30:19.365 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49f703f2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bb786a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4133b182, org.springframework.security.web.header.HeaderWriterFilter@646d50d8, org.springframework.security.web.authentication.logout.LogoutFilter@7cc8446a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3aa3b8f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@608b97a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@192c6a1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10cb0a24, org.springframework.security.web.session.SessionManagementFilter@225f4f04, org.springframework.security.web.access.ExceptionTranslationFilter@5db498ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32bda632]
+2023-11-08 14:30:19.516 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-08 14:30:19.524 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:30:19.534 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-08 14:30:19.541 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.167 seconds (JVM running for 1.581)
+2023-11-08 14:30:38.511 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 14:30:38.511 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-08 14:30:38.511 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-08 14:30:38.565 INFO  [http-nio-8085-exec-1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-11-08 14:30:38.633 INFO  [http-nio-8085-exec-1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-11-08 14:31:13.688 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-11-08 14:31:13.689 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-11-08 14:31:15.191 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 24016 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-08 14:31:15.192 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-08 14:31:15.216 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-08 14:31:15.216 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-08 14:31:15.773 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-08 14:31:15.777 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:31:15.778 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-08 14:31:15.778 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-08 14:31:15.817 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-08 14:31:15.817 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 601 ms
+2023-11-08 14:31:15.948 WARN  [restartedMain] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] - 
+
+Using generated security password: 7fac4480-bbb7-4e30-91c5-3c4ea3572549
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-08 14:31:15.981 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:31:15.982 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/css/**']
+2023-11-08 14:31:15.982 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:31:15.982 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/js/**']
+2023-11-08 14:31:15.982 WARN  [restartedMain] [o.s.s.c.a.web.builders.WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-11-08 14:31:15.982 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will not secure Ant [pattern='/img/**']
+2023-11-08 14:31:16.000 INFO  [restartedMain] [o.s.s.web.DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3731ff69, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a8e4a45, org.springframework.security.web.context.SecurityContextPersistenceFilter@3eed8e0c, org.springframework.security.web.header.HeaderWriterFilter@78c0aab2, org.springframework.security.web.authentication.logout.LogoutFilter@29e8171f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c9728f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d924bd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@730577ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f510973, org.springframework.security.web.session.SessionManagementFilter@37d9c062, org.springframework.security.web.access.ExceptionTranslationFilter@6069f26b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@121bcbd0]
+2023-11-08 14:31:16.158 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-08 14:31:16.167 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-08 14:31:16.178 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-08 14:31:16.185 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.182 seconds (JVM running for 1.588)
+2023-11-08 14:31:46.923 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 14:31:46.923 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-08 14:31:46.926 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 3 ms
+2023-11-08 14:31:46.944 INFO  [http-nio-8085-exec-1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-11-08 14:31:47.027 INFO  [http-nio-8085-exec-1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-11-08 14:31:50.426 WARN  [http-nio-8085-exec-2] [o.s.web.servlet.PageNotFound] - No mapping for GET /board/boardEdit
