@@ -29,7 +29,7 @@ public class BoardCtrl {
     // 자유게시판 상세보기
     @GetMapping("boardDetail")
     public String boardDetail(HttpServletRequest request, Model model) {
-        int bno = Integer.parseInt(request.getParameter("bno"));
+        Integer bno = Integer.parseInt(request.getParameter("bno"));
         // 조회수 증가 넣기
 
         Board boardDetail = boardService.boardDetail(bno);
@@ -40,7 +40,7 @@ public class BoardCtrl {
     // 자유게시판 글 삭제하기
     @GetMapping("boardDelete")
     public String boardDelete(HttpServletRequest request, Model model) {
-        int bno = Integer.parseInt(request.getParameter("bno"));
+        Integer bno = Integer.parseInt(request.getParameter("bno"));
         boardService.boardDelete(bno);
         return "redirect:boardList";
     }
@@ -63,7 +63,7 @@ public class BoardCtrl {
     // 자유게시판 수정하기
     @GetMapping("boardEdit")
     public String boardEdit(HttpServletRequest request, Model model) {
-        int bno = Integer.parseInt(request.getParameter("bno"));
+        Integer bno = Integer.parseInt(request.getParameter("bno"));
         Board boardEdit = boardService.boardDetail(bno);
         model.addAttribute("boardEdit", boardEdit);
         return "board/boardEdit";
@@ -71,7 +71,7 @@ public class BoardCtrl {
 
     @PostMapping("boardEdit")
     public String noticeEdit(HttpServletRequest request, Model model) {
-        int bno = Integer.parseInt(request.getParameter("bno"));
+        Integer bno = Integer.parseInt(request.getParameter("bno"));
         Board boardEdit = new Board();
         boardEdit.setBno(bno);
         boardEdit.setTitle(request.getParameter("title"));

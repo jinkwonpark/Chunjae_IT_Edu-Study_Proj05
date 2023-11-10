@@ -18,7 +18,7 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public Board boardDetail(int bno) {
+    public Board boardDetail(Integer bno) {
         return boardMapper.boardDetail(bno);
     }
 
@@ -31,7 +31,7 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void boardDelete(int bno) {
+    public void boardDelete(Integer bno) {
         boardMapper.boardDelete(bno);
     }
 }

@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface BoardService {
     public List<Board> boardList();
-    public Board boardDetail(int bno);
+    public Board boardDetail(Integer bno);
     public void boardInsert(Board board);
     public void boardEdit(Board board);
-    public void boardDelete(int bno);
+    public void boardDelete(Integer bno);
 }
