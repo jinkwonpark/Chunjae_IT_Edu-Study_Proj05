@@ -13,5 +13,5 @@ public class Board {
     private String content;
     private String author;
     private String regdate;
-    private int visited;
+    private Integer visited;
 }
