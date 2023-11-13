@@ -15,6 +15,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/board/*")
 public class BoardCtrl {
+
     @Autowired
     private BoardService boardService;
 
@@ -31,10 +32,9 @@ public class BoardCtrl {
     public String boardDetail(HttpServletRequest request, Model model) {
         Integer bno = Integer.parseInt(request.getParameter("bno"));
         // 조회수 증가 넣기
-
         Board boardDetail = boardService.boardDetail(bno);
         model.addAttribute("bd", boardDetail);
-        return "/board/boardDetail";
+        return "board/boardDetail";
     }
 
     // 자유게시판 글 삭제하기
@@ -48,7 +48,7 @@ public class BoardCtrl {
     // 자유게시판 글쓰기
     @GetMapping("boardInsert")
     public String boardInsertForm(HttpServletRequest request, Model model) {
-        return "/board/boardInsert";
+        return "board/boardInsert";
     }
 
     @PostMapping("boardInsert")
