@@ -62,7 +62,7 @@ public class BoardCtrl {
 
     // 자유게시판 수정하기
     @GetMapping("boardEdit")
-    public String boardEdit(HttpServletRequest request, Model model) {
+    public String boardEditForm(HttpServletRequest request, Model model) {
         Integer bno = Integer.parseInt(request.getParameter("bno"));
         Board boardEdit = boardService.boardDetail(bno);
         model.addAttribute("boardEdit", boardEdit);
@@ -70,7 +70,7 @@ public class BoardCtrl {
     }
 
     @PostMapping("boardEdit")
-    public String noticeEdit(HttpServletRequest request, Model model) {
+    public String boardEdit(HttpServletRequest request, Model model) {
         Integer bno = Integer.parseInt(request.getParameter("bno"));
         Board boardEdit = new Board();
         boardEdit.setBno(bno);

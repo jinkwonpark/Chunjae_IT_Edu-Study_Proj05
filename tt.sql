@@ -11,8 +11,8 @@ CREATE TABLE USER(
 	NAME VARCHAR(100) NOT NULL,  -- 회원 이름
 	email VARCHAR(100) NOT NULL,  -- 회원 이메일
 	tel VARCHAR(20),  -- 회원 전화번호
-	addr1 VARCHAR(300),  -- 회원 주소1
-	addr2 VARCHAR(300) NOT NULL,  -- 회원 주소2
+	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소1
+	addr2 VARCHAR(300),  -- 회원 주소2
 	regdate TIMESTAMP DEFAULT CURRENT_TIME()  -- 회원 등록일
 );
 

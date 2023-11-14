@@ -60,4 +60,30 @@ public class ProductCtrl {
     }
     
     // 상품 수정하기
+    @GetMapping("productEdit")
+    public String productEditForm(HttpServletRequest request, Model model) {
+        Integer pno = Integer.parseInt(request.getParameter("pno"));
+        Product productEdit = productService.productDetail(pno);
+        model.addAttribute("productEdit", productEdit);
+        return "product/productEdit";
+    }
+
+    @PostMapping("productEdit")
+    public String productEdit(HttpServletRequest request, Model model) {
+        Integer pno = Integer.parseInt(request.getParameter("pno"));
+        Product productEdit = new Product();
+        productEdit.setPno(pno);
+        productEdit.setTitle(request.getParameter("title"));
+        productEdit.setContent(request.getParameter("content"));
+        productEdit.setPrice(request.getParameter("price"));
+        // Integer location 받는 방법 1
+        // Integer location = Integer.parseInt(request.getParameter("location"));
+        // productEdit.setLocation(location);
+        // Integer location 받는 방법 2
+        productEdit.setLocation(Integer.parseInt(request.getParameter("location")));
+        productEdit.setStatus(Integer.parseInt(request.getParameter("status")));
+        productEdit.setContact(request.getParameter("contact"));
+        productService.productEdit(productEdit);
+        return "redirect:productList";
+    }
 }
