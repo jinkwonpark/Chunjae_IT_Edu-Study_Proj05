@@ -15,7 +15,7 @@ public interface BoardMapper {
     @Select("select * from board where bno = #{bno}")
     public Board boardDetail(Integer bno);
     // 자유게시판 글쓰기
-    @Insert("insert into board(title, content, author) values(#{title}, #{content}, #{author}) ")
+    @Insert("insert into board(title, content, author) values(#{title}, #{content}, #{author})")
     public void boardInsert(Board board);
     // 자유게시판 글 수정하기
     @Update("update board set title = #{title}, content = #{content} where bno = #{bno}")

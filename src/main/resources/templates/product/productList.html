@@ -5,8 +5,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <title>상품 목록</title>
 </head>
 <body>
+    <div>
+        <div>
+            <h2>상품 목록</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>가격</th>
+                    <th>지역</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr th:each="pl : ${productList}">
+                <td th:text="${pl.pno}"></td>
+                <td><a th:href="@{'/product/productDetail?pno=' + ${pl.pno}}"><span th:text="${pl.title}"></span></a></td>
+                <td th:text="${pl.price}"></td>
+                <td th:text="${pl.location}"></td>
+                <td th:text="${pl.author}"></td>
+                <td th:text="${pl.regdate}"></td>
+                <td th:text="${pl.visited}"></td>
+            </tr>
+            </tbody>
+        </table>
+        <a th:href="@{'/product/productInsert'}"><button>글쓰기</button></a>
+    </div>
 </body>
+<script>
+    $(document).ready(function (){
+
+        $('tbody tr').each(function() {
+            var locationValue = $(this).find('td:nth-child(4)').text();
+            if (locationValue === '1') {
+                $(this).find('td:nth-child(4)').text('서울');
+            } else if (locationValue === '2') {
+                $(this).find('td:nth-child(4)').text('부산');
+            } else if (locationValue === '3') {
+                $(this).find('td:nth-child(4)').text('대구');
+            } else if (locationValue === '4') {
+                $(this).find('td:nth-child(4)').text('인천');
+            } else if (locationValue === '5') {
+                $(this).find('td:nth-child(4)').text('광주');
+            } else if (locationValue === '6') {
+                $(this).find('td:nth-child(4)').text('대전');
+            } else if (locationValue === '7') {
+                $(this).find('td:nth-child(4)').text('울산');
+            } else if (locationValue === '8') {
+                $(this).find('td:nth-child(4)').text('세종');
+            } else if (locationValue === '9') {
+                $(this).find('td:nth-child(4)').text('경기');
+            } else if (locationValue === '10') {
+                $(this).find('td:nth-child(4)').text('강원');
+            } else if (locationValue === '11') {
+                $(this).find('td:nth-child(4)').text('충북');
+            } else if (locationValue === '12') {
+                $(this).find('td:nth-child(4)').text('충남');
+            } else if (locationValue === '13') {
+                $(this).find('td:nth-child(4)').text('전북');
+            } else if (locationValue === '14') {
+                $(this).find('td:nth-child(4)').text('전남');
+            } else if (locationValue === '15') {
+                $(this).find('td:nth-child(4)').text('경북');
+            } else if (locationValue === '16') {
+                $(this).find('td:nth-child(4)').text('경남');
+            } else if (locationValue === '17') {
+                $(this).find('td:nth-child(4)').text('제주');
+            }
+        });
+    });
+</script>
 </html>

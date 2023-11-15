@@ -55,6 +55,9 @@ public class ProductCtrl {
         Product productInsert = new Product();
         productInsert.setTitle(request.getParameter("title"));
         productInsert.setContent(request.getParameter("content"));
+        productInsert.setPrice(request.getParameter("price"));
+        productInsert.setLocation(Integer.parseInt(request.getParameter("location")));
+        productInsert.setContact(request.getParameter("contact"));
         productService.productInsert(productInsert);
         return "redirect:productList";
     }

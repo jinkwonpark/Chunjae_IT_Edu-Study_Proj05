@@ -5,8 +5,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <title>상품 수정하기</title>
 </head>
 <body>
+<div>
+    <div>
+        <h2>상품 수정하기</h2>
+    </div>
+    <div  class="container">
+        <form th:action="@{'/product/productEdit'}" method="post">
+            <table>
+                <tr>
+                    <th>글 제목</th>
+                    <td>
+                        <input type="hidden" name="pno" id="pno" th:value="${productEdit.pno}" >
+                        <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." th:value="${productEdit.title}" maxlength="50" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>글 내용</th>
+                    <td>
+                        <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요." maxlength="1000" required>[[${productEdit.content}]]</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>가격</th>
+                    <td>
+                        <input type="text" name="price" id="price" placeholder="가격을 입력하세요" th:value="${productEdit.price}" maxlength="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>위치</th>
+                    <td>
+                        <select name="location" id="location">
+                            <option value="1">서울</option>
+                            <option value="2">부산</option>
+                            <option value="3">대구</option>
+                            <option value="4">인천</option>
+                            <option value="5">광주</option>
+                            <option value="6">대전</option>
+                            <option value="7">울산</option>
+                            <option value="8">세종</option>
+                            <option value="9">경기</option>
+                            <option value="10">강원</option>
+                            <option value="11">충북</option>
+                            <option value="12">충남</option>
+                            <option value="13">전북</option>
+                            <option value="14">전남</option>
+                            <option value="15">경북</option>
+                            <option value="16">경남</option>
+                            <option value="17">제주</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        연락방법
+                    </th>
+                    <td>
+                        <input type="text" name="contact" id="contact" placeholder="연락방법을 입력하세요" th:value="${productEdit.contact}" maxlength="100" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">수정</button>
+                        &nbsp;
+                        <button type="reset">취소</button>
+                        &nbsp;
+                        <a href="/product/productList">글목록1</a>
+                        <button type="button" onclick="location.href='/product/productList'">글목록2</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
 </body>
+<script th:inline="javascript">
+    $(document).ready(function (){
+        var location = /*[[${productEdit.location}]]*/ null;
+
+        // 이제 변수 'location'을 사용하여 원하는 작업을 수행할 수 있음
+        console.log("Location Value: " + location);
+
+        // 예시: 선택된 옵션을 변경하려면 다음과 같이 사용
+        $('#location').val(location);
+    });
+</script>
 </html>

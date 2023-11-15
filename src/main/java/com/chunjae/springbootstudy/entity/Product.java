@@ -13,6 +13,7 @@ public class Product {
     private String content;
     private String price;
     private Integer location;
+    private String author;
     private String regdate;
     private Integer visited;
     private Integer status;

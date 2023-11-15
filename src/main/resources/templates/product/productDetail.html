@@ -5,8 +5,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <title>상품 상세보기</title>
 </head>
 <body>
+<div>
+    <div>
+        <h2>상품 상세보기</h2>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <td><span th:text="${pd.pno}"></span></td>
+            </tr>
+            <tr>
+                <th><span th:text="${pd.title}"></span></th>
+            </tr>
+            <tr>
+                <td><span th:text="${pd.content}"></span></td>
+            </tr>
+            <tr>
+                <td><span th:text="${pd.price}"></span></td>
+            </tr>
+            <tr>
+                <td><span id="locationSpan" th:text="${pd.location}"></span></td>
+            </tr>
+            <tr>
+                <td><span th:text="${pd.contact}"></span></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a th:href="@{'/product/productEdit?pno=' + ${pd.pno}}"><button>수정</button></a>
+                    &nbsp;
+                    <a th:href="@{'/product/productDelete?pno=' + ${pd.pno}}"><button>삭제</button></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 </body>
+<script>
+    $(document).ready(function () {
+        var locationValue = $("#locationSpan").text();
+
+        if (locationValue === "1") {
+            $("#locationSpan").text("서울");
+        } else if (locationValue === "2") {
+            $("#locationSpan").text("부산");
+        } else if (locationValue === "3") {
+            $("#locationSpan").text("대구");
+        } else if (locationValue === "4") {
+            $("#locationSpan").text("인천");
+        } else if (locationValue === "5") {
+            $("#locationSpan").text("광주");
+        } else if (locationValue === "6") {
+            $("#locationSpan").text("대전");
+        } else if (locationValue === "7") {
+            $("#locationSpan").text("울산");
+        } else if (locationValue === "8") {
+            $("#locationSpan").text("세종");
+        } else if (locationValue === "9") {
+            $("#locationSpan").text("경기");
+        } else if (locationValue === "10") {
+            $("#locationSpan").text("강원");
+        } else if (locationValue === "11") {
+            $("#locationSpan").text("충북");
+        } else if (locationValue === "12") {
+            $("#locationSpan").text("충남");
+        } else if (locationValue === "13") {
+            $("#locationSpan").text("전북");
+        } else if (locationValue === "14") {
+            $("#locationSpan").text("전남");
+        } else if (locationValue === "15") {
+            $("#locationSpan").text("경북");
+        } else if (locationValue === "16") {
+            $("#locationSpan").text("경남");
+        } else if (locationValue === "17") {
+            $("#locationSpan").text("제주");
+        }
+    });
+</script>
 </html>
