@@ -85,14 +85,14 @@ CREATE TABLE product(
 	content VARCHAR(2000) NOT NULL,  -- 상품 내용
 	price VARCHAR(200) NOT NULL,  -- 상품 가격
 	location INT NOT NULL,  -- 상품 지역
+	STATUS INT DEFAULT 1, -- 상품 상태 : 판매중(1), 예약중(2), 판매완료(3)
 	author VARCHAR(20), -- 상품 작성자
 	regdate TIMESTAMP DEFAULT CURRENT_TIME,  -- 상품 작성일
 	visited INT DEFAULT 0,  -- 상품 조회수
-	STATUS INT NOT NULL, -- 상품 상태 : 판매중(1), 예약중(2), 판매완료(3)
 	contact VARCHAR(100) NOT NULL  -- 연락 방법
 );
 
-INSERT INTO product VALUES (DEFAULT, '상품1', '상품 내용1 입니다', '10000원', '서울', '김이름', DEFAULT, DEFAULT, 1, '전화번호')
+INSERT INTO product VALUES (DEFAULT, '상품1', '상품 내용1 입니다', '10000원', '1', '김이름', DEFAULT, DEFAULT, '1', '전화번호');
 
 -- 상품파일 TABLE
 CREATE TABLE productFile(

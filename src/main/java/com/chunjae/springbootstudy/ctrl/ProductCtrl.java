@@ -84,7 +84,7 @@ public class ProductCtrl {
         // productEdit.setLocation(location);
         // Integer location 받는 방법 2
         productEdit.setLocation(Integer.parseInt(request.getParameter("location")));
-        productEdit.setStatus(Integer.parseInt(request.getParameter("status")));
+        // productEdit.setStatus(Integer.parseInt(request.getParameter("status")));
         productEdit.setContact(request.getParameter("contact"));
         productService.productEdit(productEdit);
         return "redirect:productList";

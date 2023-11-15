@@ -39,23 +39,23 @@
                     <th>위치</th>
                     <td>
                         <select name="location" id="location">
-                            <option value="1">서울</option>
-                            <option value="2">부산</option>
-                            <option value="3">대구</option>
-                            <option value="4">인천</option>
-                            <option value="5">광주</option>
-                            <option value="6">대전</option>
-                            <option value="7">울산</option>
-                            <option value="8">세종</option>
-                            <option value="9">경기</option>
-                            <option value="10">강원</option>
-                            <option value="11">충북</option>
-                            <option value="12">충남</option>
-                            <option value="13">전북</option>
-                            <option value="14">전남</option>
-                            <option value="15">경북</option>
-                            <option value="16">경남</option>
-                            <option value="17">제주</option>
+                            <option value="1" th:selected="${productEdit.location == 1}">서울</option>
+                            <option value="2" th:selected="${productEdit.location == 2}">부산</option>
+                            <option value="3" th:selected="${productEdit.location == 3}">대구</option>
+                            <option value="4" th:selected="${productEdit.location == 4}">인천</option>
+                            <option value="5" th:selected="${productEdit.location == 5}">광주</option>
+                            <option value="6" th:selected="${productEdit.location == 6}">대전</option>
+                            <option value="7" th:selected="${productEdit.location == 7}">울산</option>
+                            <option value="8" th:selected="${productEdit.location == 8}">세종</option>
+                            <option value="9" th:selected="${productEdit.location == 9}">경기</option>
+                            <option value="10" th:selected="${productEdit.location == 10}">강원</option>
+                            <option value="11" th:selected="${productEdit.location == 11}">충북</option>
+                            <option value="12" th:selected="${productEdit.location == 12}">충남</option>
+                            <option value="13" th:selected="${productEdit.location == 13}">전북</option>
+                            <option value="14" th:selected="${productEdit.location == 14}">전남</option>
+                            <option value="15" th:selected="${productEdit.location == 15}">경북</option>
+                            <option value="16" th:selected="${productEdit.location == 16}">경남</option>
+                            <option value="17" th:selected="${productEdit.location == 17}">제주</option>
                         </select>
                     </td>
                 </tr>
@@ -82,15 +82,4 @@
     </div>
 </div>
 </body>
-<script th:inline="javascript">
-    $(document).ready(function (){
-        var location = /*[[${productEdit.location}]]*/ null;
-
-        // 이제 변수 'location'을 사용하여 원하는 작업을 수행할 수 있음
-        console.log("Location Value: " + location);
-
-        // 예시: 선택된 옵션을 변경하려면 다음과 같이 사용
-        $('#location').val(location);
-    });
-</script>
 </html>
