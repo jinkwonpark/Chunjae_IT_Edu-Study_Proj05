@@ -82,8 +82,13 @@
                         <button type="reset">취소</button>
                         &nbsp;
                         <a href="/product/productList">글목록1</a>
-                        <button type="button" onclick="location.href='/product/productList'">글목록2</button>
+                        <button type="button" onclick="productlist()">글목록2</button>
                     </td>
+                    <script>
+                        function productlist() {
+                            location.href = '/product/productList';
+                        }
+                    </script>
                 </tr>
             </table>
         </form>

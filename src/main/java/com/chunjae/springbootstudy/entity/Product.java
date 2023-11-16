@@ -13,9 +13,9 @@ public class Product {
     private String content;
     private String price;
     private Integer location;
+    private Integer status;
     private String author;
     private String regdate;
     private Integer visited;
-    private Integer status;
     private String contact;
 }

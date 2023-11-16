@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <title>상품 상세보기</title>
 </head>
 <body>
@@ -16,22 +15,54 @@
     <div class="container">
         <table>
             <tr>
-                <td><span th:text="${pd.pno}"></span></td>
+                <th>번호</th>
+                <td th:text="${pd.pno}"></td>
             </tr>
             <tr>
-                <th><span th:text="${pd.title}"></span></th>
+                <th>제목</th>
+                <td th:text="${pd.title}"></td>
             </tr>
             <tr>
-                <td><span th:text="${pd.content}"></span></td>
+                <th>내용</th>
+                <td th:text="${pd.content}"></td>
             </tr>
             <tr>
-                <td><span th:text="${pd.price}"></span></td>
+                <th>가격</th>
+                <td th:text="${pd.price}"></td>
             </tr>
             <tr>
-                <td><span id="locationSpan" th:text="${pd.location}"></span></td>
+                <th>지역</th>
+                <td th:switch="${pd.location}">
+                    <span th:case="1">서울</span>
+                    <span th:case="2">부산</span>
+                    <span th:case="3">대구</span>
+                    <span th:case="4">인천</span>
+                    <span th:case="5">광주</span>
+                    <span th:case="6">대전</span>
+                    <span th:case="7">울산</span>
+                    <span th:case="8">세종</span>
+                    <span th:case="9">경기</span>
+                    <span th:case="10">강원</span>
+                    <span th:case="11">충북</span>
+                    <span th:case="12">충남</span>
+                    <span th:case="13">전북</span>
+                    <span th:case="14">전남</span>
+                    <span th:case="15">경북</span>
+                    <span th:case="16">경남</span>
+                    <span th:case="17">제주</span>
+                </td>
             </tr>
             <tr>
-                <td><span th:text="${pd.contact}"></span></td>
+                <th>상태</th>
+                <td th:switch="${pd.status}">
+                    <span th:case="1">판매중</span>
+                    <span th:case="2">예약중</span>
+                    <span th:case="3">판매완료</span>
+                </td>
+            </tr>
+            <tr>
+                <th>연락방법</th>
+                <td th:text="${pd.contact}"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -44,45 +75,5 @@
     </div>
 </div>
 </body>
-<script>
-    $(document).ready(function () {
-        var locationValue = $("#locationSpan").text();
 
-        if (locationValue === "1") {
-            $("#locationSpan").text("서울");
-        } else if (locationValue === "2") {
-            $("#locationSpan").text("부산");
-        } else if (locationValue === "3") {
-            $("#locationSpan").text("대구");
-        } else if (locationValue === "4") {
-            $("#locationSpan").text("인천");
-        } else if (locationValue === "5") {
-            $("#locationSpan").text("광주");
-        } else if (locationValue === "6") {
-            $("#locationSpan").text("대전");
-        } else if (locationValue === "7") {
-            $("#locationSpan").text("울산");
-        } else if (locationValue === "8") {
-            $("#locationSpan").text("세종");
-        } else if (locationValue === "9") {
-            $("#locationSpan").text("경기");
-        } else if (locationValue === "10") {
-            $("#locationSpan").text("강원");
-        } else if (locationValue === "11") {
-            $("#locationSpan").text("충북");
-        } else if (locationValue === "12") {
-            $("#locationSpan").text("충남");
-        } else if (locationValue === "13") {
-            $("#locationSpan").text("전북");
-        } else if (locationValue === "14") {
-            $("#locationSpan").text("전남");
-        } else if (locationValue === "15") {
-            $("#locationSpan").text("경북");
-        } else if (locationValue === "16") {
-            $("#locationSpan").text("경남");
-        } else if (locationValue === "17") {
-            $("#locationSpan").text("제주");
-        }
-    });
-</script>
 </html>

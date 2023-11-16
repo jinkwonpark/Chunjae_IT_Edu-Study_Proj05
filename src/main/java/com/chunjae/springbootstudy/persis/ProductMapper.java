@@ -15,7 +15,7 @@ public interface ProductMapper {
     @Select("select * from product where pno = #{pno}")
     public Product productDetail(Integer pno);
     // 상품 글쓰기
-    @Insert("insert into product(title, content, price, location, author, status, contact) values(#{title}, #{content}, #{price}, #{location}, #{author}, #{status}, #{contact})")
+    @Insert("insert into product(title, content, price, location, author, contact) values(#{title}, #{content}, #{price}, #{location}, #{author}, #{contact})")
     public void productInsert(Product product);
     // 상품 글 수정하기
     @Update("update product set title = #{title}, content = #{content}, price = #{price}, location = #{location}, status = #{status}, contact = #{contact} where pno = #{pno}")
