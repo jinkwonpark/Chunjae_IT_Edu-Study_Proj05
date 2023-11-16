@@ -22,6 +22,14 @@
                         <input type="hidden" name="pno" id="pno" th:value="${productEdit.pno}" >
                         <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." th:value="${productEdit.title}" maxlength="50" required>
                     </td>
+                    <th>상태</th>
+                    <td>
+                        <select name="status" id="status">
+                            <option value="1" th:selected="${productEdit.status == 1}">판매중</option>
+                            <option value="2" th:selected="${productEdit.status == 2}">예약중</option>
+                            <option value="3" th:selected="${productEdit.status == 3}">판매완료</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <th>글 내용</th>

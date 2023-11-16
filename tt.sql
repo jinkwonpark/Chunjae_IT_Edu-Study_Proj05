@@ -92,7 +92,7 @@ CREATE TABLE product(
 	contact VARCHAR(100) NOT NULL  -- 연락 방법
 );
 
-INSERT INTO product VALUES (DEFAULT, '상품1', '상품 내용1 입니다', '10000원', '1', '김이름', DEFAULT, DEFAULT, '1', '전화번호');
+INSERT INTO product VALUES (DEFAULT, '상품1', '상품 내용1 입니다', '10000원', '1', '1', '김이름', DEFAULT, DEFAULT, '전화번호');
 
 -- 상품파일 TABLE
 CREATE TABLE productFile(

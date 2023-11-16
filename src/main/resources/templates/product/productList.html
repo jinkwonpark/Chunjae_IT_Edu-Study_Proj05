@@ -20,6 +20,7 @@
                     <th>제목</th>
                     <th>가격</th>
                     <th>지역</th>
+                    <th>상태</th>
                     <th>작성자</th>
                     <th>작성일</th>
                     <th>조회수</th>
@@ -30,7 +31,34 @@
                 <td th:text="${pl.pno}"></td>
                 <td><a th:href="@{'/product/productDetail?pno=' + ${pl.pno}}"><span th:text="${pl.title}"></span></a></td>
                 <td th:text="${pl.price}"></td>
-                <td th:text="${pl.location}"></td>
+                <td th:switch="${pl.location}">
+                    <span>
+                        <span th:case="1">서울</span>
+                        <span th:case="2">부산</span>
+                        <span th:case="3">대구</span>
+                        <span th:case="4">인천</span>
+                        <span th:case="5">광주</span>
+                        <span th:case="6">대전</span>
+                        <span th:case="7">울산</span>
+                        <span th:case="8">세종</span>
+                        <span th:case="9">경기</span>
+                        <span th:case="10">강원</span>
+                        <span th:case="11">충북</span>
+                        <span th:case="12">충남</span>
+                        <span th:case="13">전북</span>
+                        <span th:case="14">전남</span>
+                        <span th:case="15">경북</span>
+                        <span th:case="16">경남</span>
+                        <span th:case="17">제주</span>
+                    </span>
+                </td>
+                <td>
+                    <span th:switch="${pl.status}">
+                        <span th:case="1">판매중</span>
+                        <span th:case="2">예약중</span>
+                        <span th:case="3">판매완료</span>
+                    </span>
+                </td>
                 <td th:text="${pl.author}"></td>
                 <td th:text="${pl.regdate}"></td>
                 <td th:text="${pl.visited}"></td>
@@ -40,47 +68,4 @@
         <a th:href="@{'/product/productInsert'}"><button>글쓰기</button></a>
     </div>
 </body>
-<script>
-    $(document).ready(function (){
-
-        $('tbody tr').each(function() {
-            var locationValue = $(this).find('td:nth-child(4)').text();
-            if (locationValue === '1') {
-                $(this).find('td:nth-child(4)').text('서울');
-            } else if (locationValue === '2') {
-                $(this).find('td:nth-child(4)').text('부산');
-            } else if (locationValue === '3') {
-                $(this).find('td:nth-child(4)').text('대구');
-            } else if (locationValue === '4') {
-                $(this).find('td:nth-child(4)').text('인천');
-            } else if (locationValue === '5') {
-                $(this).find('td:nth-child(4)').text('광주');
-            } else if (locationValue === '6') {
-                $(this).find('td:nth-child(4)').text('대전');
-            } else if (locationValue === '7') {
-                $(this).find('td:nth-child(4)').text('울산');
-            } else if (locationValue === '8') {
-                $(this).find('td:nth-child(4)').text('세종');
-            } else if (locationValue === '9') {
-                $(this).find('td:nth-child(4)').text('경기');
-            } else if (locationValue === '10') {
-                $(this).find('td:nth-child(4)').text('강원');
-            } else if (locationValue === '11') {
-                $(this).find('td:nth-child(4)').text('충북');
-            } else if (locationValue === '12') {
-                $(this).find('td:nth-child(4)').text('충남');
-            } else if (locationValue === '13') {
-                $(this).find('td:nth-child(4)').text('전북');
-            } else if (locationValue === '14') {
-                $(this).find('td:nth-child(4)').text('전남');
-            } else if (locationValue === '15') {
-                $(this).find('td:nth-child(4)').text('경북');
-            } else if (locationValue === '16') {
-                $(this).find('td:nth-child(4)').text('경남');
-            } else if (locationValue === '17') {
-                $(this).find('td:nth-child(4)').text('제주');
-            }
-        });
-    });
-</script>
 </html>

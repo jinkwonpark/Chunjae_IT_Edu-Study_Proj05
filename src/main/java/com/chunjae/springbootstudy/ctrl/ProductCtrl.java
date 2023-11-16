@@ -57,6 +57,7 @@ public class ProductCtrl {
         productInsert.setContent(request.getParameter("content"));
         productInsert.setPrice(request.getParameter("price"));
         productInsert.setLocation(Integer.parseInt(request.getParameter("location")));
+        // productInsert.setStatus(Integer.parseInt(request.getParameter("status")));
         productInsert.setContact(request.getParameter("contact"));
         productService.productInsert(productInsert);
         return "redirect:productList";
@@ -84,7 +85,7 @@ public class ProductCtrl {
         // productEdit.setLocation(location);
         // Integer location 받는 방법 2
         productEdit.setLocation(Integer.parseInt(request.getParameter("location")));
-        // productEdit.setStatus(Integer.parseInt(request.getParameter("status")));
+        productEdit.setStatus(Integer.parseInt(request.getParameter("status")));
         productEdit.setContact(request.getParameter("contact"));
         productService.productEdit(productEdit);
         return "redirect:productList";
