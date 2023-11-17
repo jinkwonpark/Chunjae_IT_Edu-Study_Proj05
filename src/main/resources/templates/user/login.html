@@ -4,9 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>로그인</title>
 </head>
 <body>
-
+    <div>
+        <div>
+            <h2>로그인</h2>
+        </div>
+        <div class="container">
+            <form th:action="@{/user/login}" method="post">
+                <table>
+                    <tr>
+                        <th>아이디</th>
+                        <td>
+                            <input type="text" name="id" id="id" placeholder="아이디를 입력하세요." maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요." maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">로그인</button>
+                            &nbsp;
+                            <a th:href="@{/user/term}">회원가입</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

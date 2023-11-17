@@ -3,17 +3,19 @@ CREATE DATABASE tt;
 
 USE tt;
 
+--------------------
+
 -- 회원 TABLE
 CREATE TABLE USER(
 	id BIGINT AUTO_INCREMENT PRIMARY KEY,  -- 회원 번호
 	userId VARCHAR(50) NOT NULL,  -- 회원 ID
 	pwd VARCHAR(350) NOT NULL,  -- 회원 PW
 	NAME VARCHAR(100) NOT NULL,  -- 회원 이름
-	email VARCHAR(100) NOT NULL,  -- 회원 이메일
 	tel VARCHAR(20),  -- 회원 전화번호
+	email VARCHAR(100) NOT NULL,  -- 회원 이메일
 	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소1
 	addr2 VARCHAR(300),  -- 회원 주소2
-	regdate TIMESTAMP DEFAULT CURRENT_TIME()  -- 회원 등록일
+	regdate TIMESTAMP DEFAULT CURRENT_TIME  -- 회원 등록일
 );
 
 -- role TABLE
@@ -33,6 +35,26 @@ DESC ROLE;
 DESC USER;
 
 DESC user_role;
+
+--------------------
+
+SELECT * from user WHERE id = 'jin'
+
+-- 회원 TABLE
+CREATE TABLE user(
+	uno INT AUTO_INCREMENT PRIMARY KEY,  -- 회원 번호
+	id VARCHAR(20) NOT NULL UNIQUE KEY,  -- 회원 ID
+	pw VARCHAR(350) NOT NULL,  -- 회원 PW
+	NAME VARCHAR(100) NOT NULL,  -- 회원 이름
+	tel VARCHAR(13) NOT NULL,  -- 회원 전화번호
+	email VARCHAR(100) NOT NULL,  -- 회원 이메일
+	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소1
+	addr2 VARCHAR(300),  -- 회원 주소2
+	postcode VARCHAR(10) NOT NULL, -- 회원 우편번호
+	regdate TIMESTAMP DEFAULT CURRENT_TIME  -- 회원 등록일
+);
+
+INSERT INTO user VALUES (DEFAULT, 'admin', '1234', '관리자', '010-8525-8525', 'admin@admin.com', '기본주소', '상세주소', '11111', default)
 
 -- 공지사항 TABLE
 CREATE TABLE notice(
@@ -95,10 +117,11 @@ CREATE TABLE product(
 INSERT INTO product VALUES (DEFAULT, '상품1', '상품 내용1 입니다', '10000원', '1', '1', '김이름', DEFAULT, DEFAULT, '전화번호');
 
 -- 상품파일 TABLE
-CREATE TABLE productFile(
-	pfno INT AUTO_INCREMENT PRIMARY KEY,
-	savefile
-	save
+CREATE TABLE fileData(
+	fdno INT AUTO_INCREMENT PRIMARY KEY,
+	originName VARCHAR(100),
+	saveName VARCHAR(255),
+	savePath VARCHAR(255)
 );
 
 COMMIT;

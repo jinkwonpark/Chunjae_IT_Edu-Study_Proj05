@@ -24,6 +24,7 @@ public class ProductCtrl {
     public String productList(Model model) {
         List<Product> productList = productService.productList();
         model.addAttribute("productList", productList);
+
         return "product/productList";
     }
 

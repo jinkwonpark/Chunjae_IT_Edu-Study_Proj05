@@ -12,16 +12,16 @@
         <h2>상품 글쓰기</h2>
     </div>
     <div class="container">
-        <form th:action="@{'/product/productInsert'}" method="post">
+        <form th:action="@{'/product/productInsert'}" enctype="multipart/form-data" method="post">
             <table>
                 <tr>
-                    <th>글 제목</th>
+                    <th>제목</th>
                     <td>
                         <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." maxlength="20" required>
                     </td>
                 </tr>
                 <tr>
-                    <th>글 내용</th>
+                    <th>내용</th>
                     <td>
                         <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요." maxlength="1000" required></textarea>
                     </td>
@@ -57,11 +57,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>
-                        연락방법
-                    </th>
+                    <th>연락방법</th>
                     <td>
                         <input type="text" name="contact" id="contact" placeholder="연락방법을 입력하세요" maxlength="100" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상품 사진 1</th>
+                    <td>
+                        <input type="file">
+                    </td>
+                    <th>상품 사진 2</th>
+                    <td>
+                        <input type="file">
+                    </td>
+                    <th>상품 사진 3</th>
+                    <td>
+                        <input type="file">
                     </td>
                 </tr>
                 <tr>
