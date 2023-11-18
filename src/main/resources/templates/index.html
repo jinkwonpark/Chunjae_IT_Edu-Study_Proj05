@@ -7,20 +7,6 @@
     <title>TT / 선생님 중고거래</title>
 </head>
 <body>
-    <h1>TT / 선생님 중고거래 홈페이지</h1>
-    <header>
-        <nav>
-            <ul>
-                <li><a th:href="@{/}">홈</a></li>
-                <li><a th:href="@{/user/login}">로그인</a></li>
-                <li>고객센터</li>
-                <a th:href="@{/board/boardList}">자유게시판</a>
-                <br>
-                <a th:href="@{/faq/faqList}">FAQ</a>
-                <br>
-                <li><a th:href="@{/product/productList}">상품</a></li>
-            </ul>
-        </nav>
-    </header>
+    <th:block th:replace="layout/header :: header"></th:block>
 </body>
 </html>

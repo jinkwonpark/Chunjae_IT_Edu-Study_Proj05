@@ -10,5 +10,5 @@ import java.util.Locale;
 @Controller
 public class HomeCtrl {
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Locale locale, Model model) { return "/index";}
+    public String index(Locale locale, Model model) { return "index";}
 }

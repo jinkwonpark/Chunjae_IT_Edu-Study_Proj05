@@ -3,7 +3,9 @@
     <nav>
         <ul>
             <li><a th:href="@{/}">홈</a></li>
-            <li><a th:href="@{/user/login}">로그인</a></li>
+<!--            <li><a th:href="@{/user/login}">로그인</a></li>-->
+            <li th:if="${session.sid != null}"><a th:href="@{'/user/logout'}">로그아웃</a></li>
+            <li th:if="${session.sid == null}"><a th:href="@{'/user/login'}">로그인</a></li>
             <li>고객센터</li>
             <a th:href="@{/board/boardList}">자유게시판</a>
             <br>

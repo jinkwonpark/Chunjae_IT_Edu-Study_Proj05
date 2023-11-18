@@ -8,72 +8,73 @@
     <title>상품 상세보기</title>
 </head>
 <body>
-<div>
+    <th:block th:replace="layout/header :: header"></th:block>
     <div>
-        <h2>상품 상세보기</h2>
+        <div>
+            <h2>상품 상세보기</h2>
+        </div>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <td th:text="${pd.pno}"></td>
+                </tr>
+                <tr>
+                    <th>제목</th>
+                    <td th:text="${pd.title}"></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td th:text="${pd.content}"></td>
+                </tr>
+                <tr>
+                    <th>가격</th>
+                    <td th:text="${pd.price}"></td>
+                </tr>
+                <tr>
+                    <th>지역</th>
+                    <td th:switch="${pd.location}">
+                        <span th:case="1">서울</span>
+                        <span th:case="2">부산</span>
+                        <span th:case="3">대구</span>
+                        <span th:case="4">인천</span>
+                        <span th:case="5">광주</span>
+                        <span th:case="6">대전</span>
+                        <span th:case="7">울산</span>
+                        <span th:case="8">세종</span>
+                        <span th:case="9">경기</span>
+                        <span th:case="10">강원</span>
+                        <span th:case="11">충북</span>
+                        <span th:case="12">충남</span>
+                        <span th:case="13">전북</span>
+                        <span th:case="14">전남</span>
+                        <span th:case="15">경북</span>
+                        <span th:case="16">경남</span>
+                        <span th:case="17">제주</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상태</th>
+                    <td th:switch="${pd.status}">
+                        <span th:case="1">판매중</span>
+                        <span th:case="2">예약중</span>
+                        <span th:case="3">판매완료</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>연락방법</th>
+                    <td th:text="${pd.contact}"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a th:href="@{'/product/productEdit?pno=' + ${pd.pno}}"><button>수정</button></a>
+                        &nbsp;
+                        <a th:href="@{'/product/productDelete?pno=' + ${pd.pno}}"><button>삭제</button></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div class="container">
-        <table>
-            <tr>
-                <th>번호</th>
-                <td th:text="${pd.pno}"></td>
-            </tr>
-            <tr>
-                <th>제목</th>
-                <td th:text="${pd.title}"></td>
-            </tr>
-            <tr>
-                <th>내용</th>
-                <td th:text="${pd.content}"></td>
-            </tr>
-            <tr>
-                <th>가격</th>
-                <td th:text="${pd.price}"></td>
-            </tr>
-            <tr>
-                <th>지역</th>
-                <td th:switch="${pd.location}">
-                    <span th:case="1">서울</span>
-                    <span th:case="2">부산</span>
-                    <span th:case="3">대구</span>
-                    <span th:case="4">인천</span>
-                    <span th:case="5">광주</span>
-                    <span th:case="6">대전</span>
-                    <span th:case="7">울산</span>
-                    <span th:case="8">세종</span>
-                    <span th:case="9">경기</span>
-                    <span th:case="10">강원</span>
-                    <span th:case="11">충북</span>
-                    <span th:case="12">충남</span>
-                    <span th:case="13">전북</span>
-                    <span th:case="14">전남</span>
-                    <span th:case="15">경북</span>
-                    <span th:case="16">경남</span>
-                    <span th:case="17">제주</span>
-                </td>
-            </tr>
-            <tr>
-                <th>상태</th>
-                <td th:switch="${pd.status}">
-                    <span th:case="1">판매중</span>
-                    <span th:case="2">예약중</span>
-                    <span th:case="3">판매완료</span>
-                </td>
-            </tr>
-            <tr>
-                <th>연락방법</th>
-                <td th:text="${pd.contact}"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <a th:href="@{'/product/productEdit?pno=' + ${pd.pno}}"><button>수정</button></a>
-                    &nbsp;
-                    <a th:href="@{'/product/productDelete?pno=' + ${pd.pno}}"><button>삭제</button></a>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
 </body>
 
 </html>

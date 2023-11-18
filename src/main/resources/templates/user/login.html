@@ -7,11 +7,14 @@
     <title>로그인</title>
 </head>
 <body>
+    <th:block th:replace="layout/header :: header"></th:block>
     <div>
         <div>
             <h2>로그인</h2>
         </div>
         <div class="container">
+            <p th:if="${msg eq 'error01'}" th:text="회원 정보가 없습니다."></p>
+            <p th:if="${msg eq 'error02'}" th:text="비밀번호가 맞지 않습니다."></p>
             <form th:action="@{/user/login}" method="post">
                 <table>
                     <tr>

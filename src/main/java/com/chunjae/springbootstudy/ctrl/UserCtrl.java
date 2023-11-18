@@ -24,31 +24,46 @@ public class UserCtrl {
     @Autowired
     HttpSession httpSession;
 
+    // 로그인
     @GetMapping("login")
     public String userLogin(){
         return "user/login";
     }
 
     @PostMapping("login")
-    public void userLoginPro(HttpServletRequest request, Model model) {
-        String id = request.getParameter("id"); // jin
+    public String userLoginPro(HttpServletRequest request, Model model) {
+        String id = request.getParameter("id");
         String pw = request.getParameter("pw");
         User userCheck = userService.userLogin(id);
         if(userCheck != null) {
             log.info("userCheck >>>>> " + userCheck.toString());
-            if(userCheck.getPw() == pw) {
+            if(userCheck.getPw().equals(pw)) {
+                httpSession.invalidate();
                 httpSession.setAttribute("sid", id);
+                System.out.println(httpSession.getAttribute("sid"));
+                log.info("pwcheck 맞음");
+            } else {
+                model.addAttribute("msg", "error02");
+                return "redirect:/user/login";
             }
         } else {
-            model.addAttribute("msg", "회원정보가 없습니다.");
+            model.addAttribute("msg", "error01");
+            return "redirect:/user/login";
         }
 
         //System.out.println("=================== 로그인 프로1 ===================");
         //log.info("=================== 로그인 프로2 ===================");
 
-        //return "redirect:/";
+        return "redirect:/";
     }
 
+    @GetMapping("logout")
+    public String logout(HttpServletRequest request, Model model){
+        httpSession.invalidate();
+        return "redirect:/";
+    }
+
+    // 회원약관
     @GetMapping("term")
     public String term() { return "user/term"; }
 }

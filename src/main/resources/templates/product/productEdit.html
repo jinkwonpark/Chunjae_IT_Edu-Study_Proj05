@@ -9,96 +9,97 @@
     <title>상품 수정하기</title>
 </head>
 <body>
-<div>
+    <th:block th:replace="layout/header :: header"></th:block>
     <div>
-        <h2>상품 수정하기</h2>
+        <div>
+            <h2>상품 수정하기</h2>
+        </div>
+        <div  class="container">
+            <form th:action="@{'/product/productEdit'}" method="post">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>
+                            <input type="hidden" name="pno" id="pno" th:value="${productEdit.pno}" >
+                            <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." th:value="${productEdit.title}" maxlength="50" required>
+                        </td>
+                        <th>상태</th>
+                        <td>
+                            <select name="status" id="status">
+                                <option value="1" th:selected="${productEdit.status == 1}">판매중</option>
+                                <option value="2" th:selected="${productEdit.status == 2}">예약중</option>
+                                <option value="3" th:selected="${productEdit.status == 3}">판매완료</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td>
+                            <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요." maxlength="1000" required>[[${productEdit.content}]]</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>가격</th>
+                        <td>
+                            <input type="text" name="price" id="price" placeholder="가격을 입력하세요" th:value="${productEdit.price}" maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>위치</th>
+                        <td>
+                            <select name="location" id="location">
+                                <option value="1" th:selected="${productEdit.location == 1}">서울</option>
+                                <option value="2" th:selected="${productEdit.location == 2}">부산</option>
+                                <option value="3" th:selected="${productEdit.location == 3}">대구</option>
+                                <option value="4" th:selected="${productEdit.location == 4}">인천</option>
+                                <option value="5" th:selected="${productEdit.location == 5}">광주</option>
+                                <option value="6" th:selected="${productEdit.location == 6}">대전</option>
+                                <option value="7" th:selected="${productEdit.location == 7}">울산</option>
+                                <option value="8" th:selected="${productEdit.location == 8}">세종</option>
+                                <option value="9" th:selected="${productEdit.location == 9}">경기</option>
+                                <option value="10" th:selected="${productEdit.location == 10}">강원</option>
+                                <option value="11" th:selected="${productEdit.location == 11}">충북</option>
+                                <option value="12" th:selected="${productEdit.location == 12}">충남</option>
+                                <option value="13" th:selected="${productEdit.location == 13}">전북</option>
+                                <option value="14" th:selected="${productEdit.location == 14}">전남</option>
+                                <option value="15" th:selected="${productEdit.location == 15}">경북</option>
+                                <option value="16" th:selected="${productEdit.location == 16}">경남</option>
+                                <option value="17" th:selected="${productEdit.location == 17}">제주</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            연락방법
+                        </th>
+                        <td>
+                            <input type="text" name="contact" id="contact" placeholder="연락방법을 입력하세요" th:value="${productEdit.contact}" maxlength="100" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>상품 사진</th>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">수정</button>
+                            &nbsp;
+                            <button type="reset">취소</button>
+                            &nbsp;
+                            <a href="/product/productList">글목록1</a>
+                            <button type="button" onclick="productlist()">글목록2</button>
+                        </td>
+                        <script>
+                            function productlist() {
+                                location.href = '/product/productList';
+                            }
+                        </script>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
-    <div  class="container">
-        <form th:action="@{'/product/productEdit'}" method="post">
-            <table>
-                <tr>
-                    <th>제목</th>
-                    <td>
-                        <input type="hidden" name="pno" id="pno" th:value="${productEdit.pno}" >
-                        <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." th:value="${productEdit.title}" maxlength="50" required>
-                    </td>
-                    <th>상태</th>
-                    <td>
-                        <select name="status" id="status">
-                            <option value="1" th:selected="${productEdit.status == 1}">판매중</option>
-                            <option value="2" th:selected="${productEdit.status == 2}">예약중</option>
-                            <option value="3" th:selected="${productEdit.status == 3}">판매완료</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>내용</th>
-                    <td>
-                        <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요." maxlength="1000" required>[[${productEdit.content}]]</textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <th>가격</th>
-                    <td>
-                        <input type="text" name="price" id="price" placeholder="가격을 입력하세요" th:value="${productEdit.price}" maxlength="20" required>
-                    </td>
-                </tr>
-                <tr>
-                    <th>위치</th>
-                    <td>
-                        <select name="location" id="location">
-                            <option value="1" th:selected="${productEdit.location == 1}">서울</option>
-                            <option value="2" th:selected="${productEdit.location == 2}">부산</option>
-                            <option value="3" th:selected="${productEdit.location == 3}">대구</option>
-                            <option value="4" th:selected="${productEdit.location == 4}">인천</option>
-                            <option value="5" th:selected="${productEdit.location == 5}">광주</option>
-                            <option value="6" th:selected="${productEdit.location == 6}">대전</option>
-                            <option value="7" th:selected="${productEdit.location == 7}">울산</option>
-                            <option value="8" th:selected="${productEdit.location == 8}">세종</option>
-                            <option value="9" th:selected="${productEdit.location == 9}">경기</option>
-                            <option value="10" th:selected="${productEdit.location == 10}">강원</option>
-                            <option value="11" th:selected="${productEdit.location == 11}">충북</option>
-                            <option value="12" th:selected="${productEdit.location == 12}">충남</option>
-                            <option value="13" th:selected="${productEdit.location == 13}">전북</option>
-                            <option value="14" th:selected="${productEdit.location == 14}">전남</option>
-                            <option value="15" th:selected="${productEdit.location == 15}">경북</option>
-                            <option value="16" th:selected="${productEdit.location == 16}">경남</option>
-                            <option value="17" th:selected="${productEdit.location == 17}">제주</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        연락방법
-                    </th>
-                    <td>
-                        <input type="text" name="contact" id="contact" placeholder="연락방법을 입력하세요" th:value="${productEdit.contact}" maxlength="100" required>
-                    </td>
-                </tr>
-                <tr>
-                    <th>상품 사진</th>
-                    <td>
-                        <input type="file">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="submit">수정</button>
-                        &nbsp;
-                        <button type="reset">취소</button>
-                        &nbsp;
-                        <a href="/product/productList">글목록1</a>
-                        <button type="button" onclick="productlist()">글목록2</button>
-                    </td>
-                    <script>
-                        function productlist() {
-                            location.href = '/product/productList';
-                        }
-                    </script>
-                </tr>
-            </table>
-        </form>
-    </div>
-</div>
 </body>
 </html>

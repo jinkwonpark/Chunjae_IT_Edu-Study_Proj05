@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -80,3 +81,9 @@ public class BoardCtrl {
         return "redirect:boardList";
     }
 }
+
+//    boolean canDelete = false;
+//      if(로그인한 아이디 작성자) {
+//        canDelete = true;
+//        }
+//        model.
