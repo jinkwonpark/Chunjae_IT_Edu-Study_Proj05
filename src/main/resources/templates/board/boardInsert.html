@@ -9,9 +9,7 @@
 <body>
     <th:block th:replace="layout/header :: header"></th:block>
     <div>
-        <div>
-            <h2>자유게시판 글쓰기</h2>
-        </div>
+        <h2>자유게시판 글쓰기</h2>
         <div class="container">
             <form th:action="@{/board/boardInsert}" method="post">
                 <table>

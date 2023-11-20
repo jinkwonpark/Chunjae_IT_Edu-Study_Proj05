@@ -86,4 +86,42 @@ public class UserCtrl {
         return "redirect:/user/login";  // url 링크, postmapping일때 redirect
         //return "user/login"; // html 파일
     }
+
+    // 마이페이지
+    @GetMapping("myPage")
+    public String myPage() { return "user/myPage"; }
+
+    // 회원정보 상세보기
+    @GetMapping("userDetail")
+    public String userDetail(HttpServletRequest request, Model model) {
+        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        User userDetail = userService.userDetail(uno);
+        model.addAttribute("ud", userDetail);
+        return "user/userDetail";
+    }
+
+    // 회원정보 수정하기
+    @GetMapping("userEdit")
+    public String userEditForm(HttpServletRequest request, Model model) {
+        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        User userEdit = userService.userDetail(uno);
+        model.addAttribute("userEdit", userEdit);
+        return "userEdit";
+    }
+
+    @PostMapping("userEdit")
+    public String userEdit(HttpServletRequest request, Model model) {
+        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        User userEdit = new User();
+        userEdit.setUno(uno);
+        userEdit.setPw("pw");
+        userEdit.setName("name");
+        userEdit.setTel("tel");
+        userEdit.setEmail("email");
+        userEdit.setAddr1("addr1");
+        userEdit.setAddr2("addr2");
+        userEdit.setPostcode("postcode");
+        userService.userEdit(userEdit);
+        return "redirect:myPage";
+    }
 }

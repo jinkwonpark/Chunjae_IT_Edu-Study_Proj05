@@ -1,10 +1,14 @@
 <header th:fragment="header">
     <h1>TT / 선생님 중고거래 홈페이지</h1>
+    <h3 th:if="${session.sid != null}">[[${session.sid}]]님 안녕하세요</h3>
     <nav>
         <ul>
             <li><a th:href="@{/}">홈</a></li>
-            <li th:if="${session.sid != null}"><a th:href="@{'/user/logout'}">로그아웃</a></li>
-            <li th:if="${session.sid == null}"><a th:href="@{'/user/login'}">로그인</a></li>
+            <li th:if="${session.sid != null}">
+                <a th:href="@{/user/logout}">로그아웃</a><br>
+                <a th:href="@{/user/myPage}">마이페이지</a>
+            </li>
+            <li th:if="${session.sid == null}"><a th:href="@{/user/login}">로그인</a></li>
             <li>고객센터</li>
             <a th:href="@{/board/boardList}">자유게시판</a>
             <br>

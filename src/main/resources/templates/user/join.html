@@ -10,9 +10,7 @@
 <body>
     <th:block th:replace="layout/header :: header"></th:block>
     <div>
-        <div>
-            <h2>회원가입</h2>
-        </div>
+        <h2>회원가입</h2>
         <form th:action="@{/user/join}" method="post" onsubmit="return join(this)">
         <table>
             <tr>

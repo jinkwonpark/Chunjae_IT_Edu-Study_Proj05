@@ -10,9 +10,7 @@
 <body>
     <th:block th:replace="layout/header :: header"></th:block>
     <div>
-        <div>
-            <h2>FAQ</h2>
-        </div>
+        <h2>FAQ</h2>
         <div>
             <ul th:each="fl : ${faqList}">
                 <li th:text="${fl.question}"></li>
