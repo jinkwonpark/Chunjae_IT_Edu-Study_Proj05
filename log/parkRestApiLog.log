@@ -2539,3 +2539,175 @@ org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conve
 2023-11-18 20:44:16.317 INFO  [http-nio-8085-exec-7] [c.chunjae.springbootstudy.ctrl.UserCtrl] - pwcheck 맞음
 2023-11-18 20:49:46.447 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
 2023-11-18 20:49:46.457 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-11-20 15:27:46.618 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 9736 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:27:46.620 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:27:46.747 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:27:46.747 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:27:47.501 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:27:47.506 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:27:47.507 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:27:47.507 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:27:47.557 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:27:47.557 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 810 ms
+2023-11-20 15:27:47.877 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:27:47.885 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:27:47.897 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:27:47.903 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.74 seconds (JVM running for 2.272)
+2023-11-20 15:28:52.119 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:28:52.119 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:28:52.119 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-20 15:28:53.688 WARN  [http-nio-8085-exec-4] [o.s.web.servlet.PageNotFound] - No mapping for GET /favicon.ico
+2023-11-20 15:28:59.404 INFO  [http-nio-8085-exec-6] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-11-20 15:28:59.588 INFO  [http-nio-8085-exec-6] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-11-20 15:28:59.670 INFO  [http-nio-8085-exec-6] [c.chunjae.springbootstudy.ctrl.UserCtrl] - userCheck >>>>> User(uno=1, id=admin, pw=1234, name=관리자, tel=010-8525-8525, email=admin@admin.com, addr1=기본주소, addr2=상세주소, postcode=11111, regdate=2023-11-17 20:08:21)
+2023-11-20 15:28:59.704 INFO  [http-nio-8085-exec-6] [c.chunjae.springbootstudy.ctrl.UserCtrl] - pwcheck 맞음
+2023-11-20 15:29:44.609 WARN  [http-nio-8085-exec-10] [o.s.web.servlet.PageNotFound] - No mapping for GET /member/join.do
+2023-11-20 15:38:37.873 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-11-20 15:38:37.876 INFO  [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-11-20 15:38:43.534 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 16464 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:38:43.536 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:38:43.670 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:38:43.670 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:38:44.294 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:38:44.298 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:38:44.299 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:38:44.299 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:38:44.342 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:38:44.342 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 671 ms
+2023-11-20 15:38:44.628 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:38:44.636 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:38:44.647 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:38:44.655 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.305 seconds (JVM running for 1.7)
+2023-11-20 15:38:55.044 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:38:55.044 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:38:55.044 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-20 15:39:06.012 WARN  [http-nio-8085-exec-2] [o.s.web.servlet.PageNotFound] - No mapping for GET /member/join.do
+2023-11-20 15:40:57.394 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 16676 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:40:57.396 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:40:57.422 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:40:57.422 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:40:57.984 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:40:57.989 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:40:57.989 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:40:57.989 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:40:58.034 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:40:58.034 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 612 ms
+2023-11-20 15:40:58.325 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:40:58.333 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:40:58.345 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:40:58.351 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.225 seconds (JVM running for 1.641)
+2023-11-20 15:41:09.339 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:41:09.339 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:41:09.339 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-20 15:41:11.537 WARN  [http-nio-8085-exec-2] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/join
+2023-11-20 15:41:16.822 WARN  [http-nio-8085-exec-3] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/join
+2023-11-20 15:42:52.030 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 13940 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:42:52.032 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:42:52.056 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:42:52.056 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:42:52.702 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:42:52.708 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:42:52.709 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:42:52.709 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:42:52.761 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:42:52.761 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 704 ms
+2023-11-20 15:42:53.081 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:42:53.090 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:42:53.100 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:42:53.106 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.403 seconds (JVM running for 1.872)
+2023-11-20 15:43:01.169 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:43:01.169 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:43:01.170 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-20 15:43:01.177 WARN  [http-nio-8085-exec-1] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/join
+2023-11-20 15:43:02.877 WARN  [http-nio-8085-exec-2] [o.s.web.servlet.PageNotFound] - No mapping for GET /member/join.do
+2023-11-20 15:43:04.909 WARN  [http-nio-8085-exec-3] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/join
+2023-11-20 15:44:29.989 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 15656 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:44:29.990 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:44:30.016 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:44:30.016 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:44:30.571 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:44:30.576 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:44:30.578 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:44:30.578 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:44:30.617 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:44:30.617 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 601 ms
+2023-11-20 15:44:30.906 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:44:30.914 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:44:30.925 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:44:30.931 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.226 seconds (JVM running for 1.93)
+2023-11-20 15:44:35.623 INFO  [http-nio-8085-exec-2] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:44:35.623 INFO  [http-nio-8085-exec-2] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:44:35.624 INFO  [http-nio-8085-exec-2] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-20 15:44:38.063 WARN  [http-nio-8085-exec-4] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/user/join
+2023-11-20 15:44:41.361 WARN  [http-nio-8085-exec-5] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/user/join
+2023-11-20 15:44:41.985 WARN  [http-nio-8085-exec-6] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/user/join
+2023-11-20 15:46:08.808 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 6344 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:46:08.815 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:46:08.908 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:46:08.908 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:46:09.934 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:46:09.939 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:46:09.940 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:46:09.940 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:46:09.984 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:46:09.984 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1076 ms
+2023-11-20 15:46:10.330 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:46:10.340 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:46:10.357 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:46:10.364 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 2.182 seconds (JVM running for 2.667)
+2023-11-20 15:46:17.940 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:46:17.941 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:46:17.941 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-20 15:46:17.949 WARN  [http-nio-8085-exec-1] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/user/join
+2023-11-20 15:46:20.176 WARN  [http-nio-8085-exec-3] [o.s.web.servlet.PageNotFound] - No mapping for GET /user/user/join
+2023-11-20 15:47:52.101 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 13240 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:47:52.102 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:47:52.137 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:47:52.137 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:47:52.745 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:47:52.750 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:47:52.754 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:47:52.754 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:47:52.801 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:47:52.801 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 664 ms
+2023-11-20 15:47:53.092 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:47:53.100 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:47:53.111 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:47:53.118 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.289 seconds (JVM running for 1.713)
+2023-11-20 15:47:57.726 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:47:57.726 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:47:57.726 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 0 ms
+2023-11-20 15:51:23.195 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 2712 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 15:51:23.198 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 15:51:23.229 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 15:51:23.229 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 15:51:23.811 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 15:51:23.815 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:51:23.816 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 15:51:23.816 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 15:51:23.862 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 15:51:23.862 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 633 ms
+2023-11-20 15:51:24.151 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 15:51:24.160 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 15:51:24.175 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 15:51:24.181 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.319 seconds (JVM running for 1.906)
+2023-11-20 15:51:35.386 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 15:51:35.386 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 15:51:35.387 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2023-11-20 16:10:50.655 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Starting SpringbootstudyApplication using Java 17.0.7 on FULL8-001 with PID 10944 (D:\PARK\Chunjae_IT_Edu-Study_Proj05\build\classes\java\main started by db400tea in D:\PARK\Chunjae_IT_Edu-Study_Proj05)
+2023-11-20 16:10:50.656 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - No active profile set, falling back to 1 default profile: "default"
+2023-11-20 16:10:50.682 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-20 16:10:50.682 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-20 16:10:51.313 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8085 (http)
+2023-11-20 16:10:51.322 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8085"]
+2023-11-20 16:10:51.323 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-11-20 16:10:51.323 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-20 16:10:51.370 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-11-20 16:10:51.370 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 687 ms
+2023-11-20 16:10:51.663 INFO  [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2023-11-20 16:10:51.671 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8085"]
+2023-11-20 16:10:51.682 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8085 (http) with context path ''
+2023-11-20 16:10:51.688 INFO  [restartedMain] [c.c.s.SpringbootstudyApplication] - Started SpringbootstudyApplication in 1.466 seconds (JVM running for 2.14)
+2023-11-20 16:10:57.602 INFO  [http-nio-8085-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-20 16:10:57.602 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2023-11-20 16:10:57.603 INFO  [http-nio-8085-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms

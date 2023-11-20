@@ -66,4 +66,8 @@ public class UserCtrl {
     // 회원약관
     @GetMapping("term")
     public String term() { return "user/term"; }
+
+    // 회원가입
+    @GetMapping("join")
+    public String join() { return "user/join"; }
 }
