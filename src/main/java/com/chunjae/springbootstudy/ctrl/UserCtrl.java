@@ -69,5 +69,21 @@ public class UserCtrl {
 
     // 회원가입
     @GetMapping("join")
-    public String join() { return "user/join"; }
+    public String userInsertForm() { return "user/join"; }
+
+    @PostMapping("join")
+    public String userInsert(HttpServletRequest request, Model model) {
+        User userInsert = new User();
+        userInsert.setId(request.getParameter("id"));
+        userInsert.setPw(request.getParameter("pw"));
+        userInsert.setName(request.getParameter("name"));
+        userInsert.setTel(request.getParameter("tel"));
+        userInsert.setEmail(request.getParameter("email"));
+        userInsert.setAddr1(request.getParameter("addr1"));
+        userInsert.setAddr2(request.getParameter("addr2"));
+        userInsert.setPostcode(request.getParameter("postcode"));
+        //userService.userInsert(userInsert);
+        return "redirect:/user/login";  // url 링크, postmapping일때 redirect
+        //return "user/login"; // html 파일
+    }
 }
