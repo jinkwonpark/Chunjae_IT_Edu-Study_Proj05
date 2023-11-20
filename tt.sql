@@ -39,7 +39,7 @@ DESC user_role;
 --------------------
 
 SELECT * from user WHERE id = 'jin'
-
+SELECT * FROM user
 -- 회원 TABLE
 CREATE TABLE user(
 	uno INT AUTO_INCREMENT PRIMARY KEY,  -- 회원 번호
@@ -48,8 +48,8 @@ CREATE TABLE user(
 	NAME VARCHAR(100) NOT NULL,  -- 회원 이름
 	tel VARCHAR(13) NOT NULL,  -- 회원 전화번호
 	email VARCHAR(100) NOT NULL,  -- 회원 이메일
-	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소1
-	addr2 VARCHAR(300),  -- 회원 주소2
+	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소
+	addr2 VARCHAR(300),  -- 회원 상세주소
 	postcode VARCHAR(10) NOT NULL, -- 회원 우편번호
 	regdate TIMESTAMP DEFAULT CURRENT_TIME  -- 회원 등록일
 );
