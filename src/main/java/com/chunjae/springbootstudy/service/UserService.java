@@ -17,4 +17,6 @@ public interface UserService {
     public void userDelete(Integer uno);
     // 회원 로그인
     public User userLogin(String id);
+    // 아이디 중복 확인
+    public boolean idCheck (String id);
 }

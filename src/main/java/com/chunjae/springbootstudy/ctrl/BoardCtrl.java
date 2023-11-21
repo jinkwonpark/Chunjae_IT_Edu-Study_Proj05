@@ -20,6 +20,9 @@ public class BoardCtrl {
     @Autowired
     private BoardService boardService;
 
+    @Autowired
+    HttpSession httpSession;
+
     // 자유게시판 목록
     @GetMapping("boardList")
     public String boardList(Model model) {
@@ -59,6 +62,7 @@ public class BoardCtrl {
         Board boardInsert = new Board();
         boardInsert.setTitle(request.getParameter("title"));
         boardInsert.setContent(request.getParameter("content"));
+        boardInsert.setAuthor((String) httpSession.getAttribute("sid"));
         boardService.boardInsert(boardInsert);
         return "redirect:boardList";
     }

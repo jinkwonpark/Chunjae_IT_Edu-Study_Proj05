@@ -29,4 +29,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User userLogin(String id) { return userMapper.userLogin(id); }
+
+    @Override
+    public boolean idCheck(String id) {
+        boolean pass = true;
+        int cnt = userMapper.idCheck(id);
+        if(cnt>0) pass = false;
+        return pass;
+    }
 }

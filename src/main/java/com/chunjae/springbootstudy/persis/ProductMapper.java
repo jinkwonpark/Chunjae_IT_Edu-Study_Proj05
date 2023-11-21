@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface ProductMapper {
     // 상품 목록
-    @Select("select * from product")
+    @Select("select * from product order by pno desc")
     public List<Product> productList();
     // 상품 상세보기
     @Select("select * from product where pno = #{pno}")

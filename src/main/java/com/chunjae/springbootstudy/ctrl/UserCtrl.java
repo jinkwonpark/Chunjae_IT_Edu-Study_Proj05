@@ -98,6 +98,9 @@ public class UserCtrl {
         //return "user/login"; // html 파일
     }
 
+     // 아이디 중복 확인
+
+
     // 마이페이지
     @GetMapping("myPage")
     public String myPage() { return "user/myPage"; }

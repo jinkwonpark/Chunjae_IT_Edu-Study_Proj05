@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface BoardMapper {
     // 자유게시판 목록
-    @Select("select * from board")
+    @Select("select * from board order by bno desc")
     public List<Board> boardList();
     // 자유게시판 상세보기
     @Select("select * from board where bno = #{bno}")

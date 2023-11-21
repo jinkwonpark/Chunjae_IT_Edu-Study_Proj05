@@ -26,4 +26,7 @@ public interface UserMapper {
     // 회원 로그인
     @Select("select * from user where id = #{id}")
     public User userLogin(String id);
+    // 아이디 중복 확인
+    @Select("select count(*) from user where id = #{id}")
+    public int idCheck(String id);
 }
