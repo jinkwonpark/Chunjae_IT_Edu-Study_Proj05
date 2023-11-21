@@ -23,4 +23,7 @@ public interface BoardMapper {
     // 자유게시판 글 삭제하기
     @Delete("delete from board where bno = #{bno}")
     public void boardDelete(Integer bno);
+    // 조회수 증가
+    @Update("update board set visited=visited+1 where bno = #{bno}")
+    public void boardVisited(Integer bno);
 }

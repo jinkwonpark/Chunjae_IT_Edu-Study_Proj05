@@ -37,9 +37,10 @@ DESC USER;
 DESC user_role;
 
 --------------------
-
-SELECT * from user WHERE id = 'jin'
+DROP TABLE user;
+SELECT * from user WHERE id = 'abc'
 SELECT * FROM user
+DESC user;
 -- 회원 TABLE
 CREATE TABLE user(
 	uno INT AUTO_INCREMENT PRIMARY KEY,  -- 회원 번호
@@ -48,13 +49,14 @@ CREATE TABLE user(
 	NAME VARCHAR(100) NOT NULL,  -- 회원 이름
 	tel VARCHAR(13) NOT NULL,  -- 회원 전화번호
 	email VARCHAR(100) NOT NULL,  -- 회원 이메일
-	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소
-	addr2 VARCHAR(300),  -- 회원 상세주소
+	addr1 VARCHAR(300) NOT NULL,  -- 회원 주소1
+	addr2 VARCHAR(300),  -- 회원 주소2
 	postcode VARCHAR(10) NOT NULL, -- 회원 우편번호
 	regdate TIMESTAMP DEFAULT CURRENT_TIME  -- 회원 등록일
 );
 
-INSERT INTO user VALUES (DEFAULT, 'admin', '1234', '관리자', '010-8525-8525', 'admin@admin.com', '기본주소', '상세주소', '11111', default)
+INSERT INTO user VALUES (DEFAULT, 'admin', '1234', '관리자', '010-0000-0000', 'admin@gmail.com', '기본주소', '상세주소', '11111', DEFAULT);
+INSERT INTO user VALUES (DEFAULT, 'abc', '1234', '에이비씨', '010-0000-0001', 'abc@gmail.com', 'ABC마트', '1층', '11112', DEFAULT);
 
 -- 공지사항 TABLE
 CREATE TABLE notice(

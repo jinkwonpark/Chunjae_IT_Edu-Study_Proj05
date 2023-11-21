@@ -10,4 +10,5 @@ public interface BoardService {
     public void boardInsert(Board board);
     public void boardEdit(Board board);
     public void boardDelete(Integer bno);
+    public void boardVisited(Integer bno);
 }

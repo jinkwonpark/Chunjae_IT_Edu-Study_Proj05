@@ -32,9 +32,11 @@ public class BoardCtrl {
     @GetMapping("boardDetail")
     public String boardDetail(HttpServletRequest request, Model model) {
         Integer bno = Integer.parseInt(request.getParameter("bno"));
-        // 조회수 증가 넣기
         Board boardDetail = boardService.boardDetail(bno);
         model.addAttribute("bd", boardDetail);
+        // 조회수 증가
+        boardService.boardVisited(bno);
+        boardDetail.setVisited(boardDetail.getVisited()+1);
         return "board/boardDetail";
     }
 

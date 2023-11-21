@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Log4j2
 @Controller
@@ -23,6 +24,14 @@ public class UserCtrl {
 
     @Autowired
     HttpSession httpSession;
+
+    // 회원목록
+    @GetMapping("userList")
+    public String userList(Model model) {
+        List<User> userList = userService.userList();
+        model.addAttribute("userList", userList);
+        return "user/userList";
+    }
 
     // 로그인
     @GetMapping("login")
@@ -40,6 +49,7 @@ public class UserCtrl {
             if(userCheck.getPw().equals(pw)) {
                 httpSession.invalidate();
                 httpSession.setAttribute("sid", id);
+                httpSession.setAttribute("suno", userCheck.getUno());
                 System.out.println(httpSession.getAttribute("sid"));
                 log.info("pwcheck 맞음");
             } else {
@@ -57,6 +67,7 @@ public class UserCtrl {
         return "redirect:/";
     }
 
+    // 로그아웃
     @GetMapping("logout")
     public String logout(HttpServletRequest request, Model model){
         httpSession.invalidate();
@@ -82,7 +93,7 @@ public class UserCtrl {
         userInsert.setAddr1(request.getParameter("addr1"));
         userInsert.setAddr2(request.getParameter("addr2"));
         userInsert.setPostcode(request.getParameter("postcode"));
-        //userService.userInsert(userInsert);
+        userService.userInsert(userInsert);
         return "redirect:/user/login";  // url 링크, postmapping일때 redirect
         //return "user/login"; // html 파일
     }
@@ -94,7 +105,7 @@ public class UserCtrl {
     // 회원정보 상세보기
     @GetMapping("userDetail")
     public String userDetail(HttpServletRequest request, Model model) {
-        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        Integer uno = (Integer) httpSession.getAttribute("suno");
         User userDetail = userService.userDetail(uno);
         model.addAttribute("ud", userDetail);
         return "user/userDetail";
@@ -103,25 +114,39 @@ public class UserCtrl {
     // 회원정보 수정하기
     @GetMapping("userEdit")
     public String userEditForm(HttpServletRequest request, Model model) {
-        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        Integer uno = (Integer) httpSession.getAttribute("suno");
+//        Integer uno = Integer.parseInt(request.getParameter("uno"));
         User userEdit = userService.userDetail(uno);
         model.addAttribute("userEdit", userEdit);
-        return "userEdit";
+        return "user/userEdit";
     }
 
     @PostMapping("userEdit")
     public String userEdit(HttpServletRequest request, Model model) {
-        Integer uno = Integer.parseInt(request.getParameter("uno"));
-        User userEdit = new User();
+        Integer uno = (Integer) httpSession.getAttribute("suno");
+        User userEdit = new User(); // 전체 정보 업데이트 방식
+//        User userEdit = userService.userDetail(uno); // 부분 정보 업데이트 방식
         userEdit.setUno(uno);
-        userEdit.setPw("pw");
-        userEdit.setName("name");
-        userEdit.setTel("tel");
-        userEdit.setEmail("email");
-        userEdit.setAddr1("addr1");
-        userEdit.setAddr2("addr2");
-        userEdit.setPostcode("postcode");
+        userEdit.setPw(request.getParameter("pw"));
+        userEdit.setName(request.getParameter("name"));
+        userEdit.setTel(request.getParameter("tel"));
+        userEdit.setEmail(request.getParameter("email"));
+        userEdit.setAddr1(request.getParameter("addr1"));
+        userEdit.setAddr2(request.getParameter("addr2"));
+        userEdit.setPostcode(request.getParameter("postcode"));
+//        System.out.println("-------------------------");
+//        System.out.println(userEdit.toString());
         userService.userEdit(userEdit);
         return "redirect:myPage";
+    }
+
+    // 회원 탈퇴하기
+    @GetMapping("userDelete")
+    public String userDelete(HttpServletRequest request, Model model) {
+        Integer uno = (Integer) httpSession.getAttribute("suno");
+//        Integer uno = Integer.parseInt(request.getParameter("uno"));
+        userService.userDelete(uno);
+        httpSession.invalidate();
+        return "redirect:/";
     }
 }

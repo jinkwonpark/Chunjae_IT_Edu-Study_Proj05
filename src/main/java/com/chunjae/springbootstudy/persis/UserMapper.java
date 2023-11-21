@@ -18,7 +18,7 @@ public interface UserMapper {
     @Insert("insert into user(id, pw, name, tel, email, addr1, addr2, postcode) values (#{id}, #{pw}, #{name}, #{tel}, #{email}, #{addr1}, #{addr2}, #{postcode})")
     public void userInsert(User user);
     // 회원 정보 수정하기
-    @Update("update user set pw = #{pw}, name = #{name}, tel = #{tel}, email = #{email}, addr1 = #{addr1}, addr2 = #{addr2}, postcode = #{postcode}")
+    @Update("update user set pw = #{pw}, name = #{name}, tel = #{tel}, email = #{email}, addr1 = #{addr1}, addr2 = #{addr2}, postcode = #{postcode} where uno = #{uno}")
     public void userEdit(User user);
     // 회원 삭제하기
     @Delete("delete from user where uno = #{uno}")

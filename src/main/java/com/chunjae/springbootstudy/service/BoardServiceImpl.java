@@ -34,4 +34,7 @@ public class BoardServiceImpl implements BoardService {
     public void boardDelete(Integer bno) {
         boardMapper.boardDelete(bno);
     }
+
+    @Override
+    public void boardVisited(Integer bno) { boardMapper.boardVisited(bno); }
 }
