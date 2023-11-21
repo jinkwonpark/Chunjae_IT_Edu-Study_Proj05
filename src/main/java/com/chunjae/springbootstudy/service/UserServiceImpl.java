@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User userLogin(String id) { return userMapper.userLogin(id); }
 
+    //아이디 중복 확인
     @Override
     public boolean idCheck(String id) {
         boolean pass = true;

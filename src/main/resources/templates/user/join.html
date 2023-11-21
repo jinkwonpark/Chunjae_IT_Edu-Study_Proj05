@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>회원가입</title>
 </head>
 <body>
@@ -19,6 +20,8 @@
                 </th>
                 <td>
                     <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." maxlength="20" required />
+                    <button type="button" onclick="idCheck()">중복검사</button>
+<!--                    <p id = "idCk"></p>-->
                 </td>
             </tr>
             <tr>
@@ -113,6 +116,36 @@
                     alert("비밀번호가일치하지않습니다.");
                     return false;
                 }
+            }
+        </script>
+        <script>
+            function idCheck(){
+                if($("#id").val()==""){
+                    alert("아이디를 입력하지 않았습니다.");
+                    $("#id").focus();
+                    return false;
+                }
+                var params = {"id" : $("#id").val()};
+                $.ajax({
+                    url:"/user/idCheckPro",   //아이디가 전송되어질 곳
+                    type:"post",
+                    data:JSON.stringify(params),
+                    dataType:"json",
+                    contentType:"application/json",
+                    success : function(result) {
+                        var idPass = result;
+                        if(idPass == false){
+                            $("#id").val(" ");
+                            alert("이미 사용중인 아이디입니다.");
+                            $("#id").focus();
+                        } else if(idPass == true){
+                            $("#idCk").val("yes");
+                            alert("사용 가능한 아이디입니다.");
+                        } else if(idPass==""){
+                            $("#idCk").val("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
+                        }
+                    }
+                });
             }
         </script>
     </div>

@@ -4,10 +4,13 @@ import com.chunjae.springbootstudy.entity.User;
 import com.chunjae.springbootstudy.service.UserService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -99,7 +102,12 @@ public class UserCtrl {
     }
 
      // 아이디 중복 확인
-
+     @PostMapping("idCheckPro")
+     public ResponseEntity idCheckPro(@RequestBody User user) {
+         String id = user.getId();
+         boolean result = userService.idCheck(id);
+         return new ResponseEntity<>(result, HttpStatus.OK);
+     }
 
     // 마이페이지
     @GetMapping("myPage")
