@@ -21,8 +21,7 @@
                 <td>
                     <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." maxlength="20" required />
                     <button type="button" onclick="idCheck()">중복검사</button>
-                    <h6 id="idCk" style="margin:0px"></h6>
-<!--                    <p id="idCk"></p>-->
+                    <h6 id="idCk" name="idCk" style="margin:0px"></h6>
                 </td>
             </tr>
             <tr>
@@ -99,6 +98,15 @@
             </tr>
         </table>
         </form>
+        <script>
+            $(document).ready(function(){
+                $("#id").keyup(function(){
+                    $("#idCk").val()="";
+                    alert("아이디중복확인을하지않으셨습니다.")
+                    return false;
+                })
+            })
+        </script>
         <script th:inline="javascript">
             function join(f) {
                 // alert(f.pw.value);
@@ -107,6 +115,12 @@
                     alert("비밀번호가일치하지않습니다.");
                     return false;
                 }
+                if(f.idCk.value!=""){
+                    alert("아이디중복확인을하지않으셨습니다.");
+                    return false;
+                    $("#idCk").text("이미 사용중인 아이디입니다.");
+                }
+
             }
         </script>
         <script>
@@ -127,13 +141,16 @@
                     success : function(result) {
                         var idPass = result;
                         if(idPass == false){
+                            $("#idCk").val("no")
                             $("#idCk").text("이미 사용중인 아이디입니다.");
                             alert("이미 사용중인 아이디입니다.");
                             $("#id").focus();
                         } else if(idPass == true){
+                            $("#idCk").val("yes")
                             $("#idCk").text("사용 가능한 아이디입니다.");
                             alert("사용 가능한 아이디입니다.");
                         } else if(idPass==""){
+                            $("#idCk").val("no")
                             $("#idCk").text("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
                         }
                     }
