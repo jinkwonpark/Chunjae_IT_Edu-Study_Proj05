@@ -21,7 +21,8 @@
                 <td>
                     <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." maxlength="20" required />
                     <button type="button" onclick="idCheck()">중복검사</button>
-<!--                    <p id = "idCk"></p>-->
+                    <h6 id="idCk" style="margin:0px"></h6>
+<!--                    <p id="idCk"></p>-->
                 </td>
             </tr>
             <tr>
@@ -99,19 +100,9 @@
         </table>
         </form>
         <script th:inline="javascript">
-            //var pw = document.getElementById("pw").value;
-            //var pwcheck = document.getElementById("pwcheck").value;
-            //var userjoin_btn = document.getElementById("userjoin_btn");
-
-            /*userjoin_btn.addEventListener("click", function () {
-                if () {
-                    pw
-                    location.href = "/user/login";
-                }
-            })*/
             function join(f) {
-                alert(f.pw.value);
-                alert(f.pwcheck.value);
+                // alert(f.pw.value);
+                // alert(f.pwcheck.value);
                 if(f.pw.value!=f.pwcheck.value) {
                     alert("비밀번호가일치하지않습니다.");
                     return false;
@@ -122,6 +113,7 @@
             function idCheck(){
                 if($("#id").val()==""){
                     alert("아이디를 입력하지 않았습니다.");
+                    $("#idCk").text("");
                     $("#id").focus();
                     return false;
                 }
@@ -135,14 +127,14 @@
                     success : function(result) {
                         var idPass = result;
                         if(idPass == false){
-                            $("#id").val(" ");
+                            $("#idCk").text("이미 사용중인 아이디입니다.");
                             alert("이미 사용중인 아이디입니다.");
                             $("#id").focus();
                         } else if(idPass == true){
-                            $("#idCk").val("yes");
+                            $("#idCk").text("사용 가능한 아이디입니다.");
                             alert("사용 가능한 아이디입니다.");
                         } else if(idPass==""){
-                            $("#idCk").val("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
+                            $("#idCk").text("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
                         }
                     }
                 });
