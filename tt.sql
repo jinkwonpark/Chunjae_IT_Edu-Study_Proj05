@@ -40,7 +40,7 @@ DESC user_role;
 DROP TABLE user;
 SELECT * from user WHERE id = 'abc'
 SELECT * from board
-SELECT * FROM user WHERE id='jin'
+SELECT * FROM user;
 DESC user;
 -- 회원 TABLE
 CREATE TABLE user(
