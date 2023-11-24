@@ -100,6 +100,7 @@
         </table>
         </form>
         <script>
+            // 아이디 칸에 키보드 입력 시
             $(document).ready(function(){
                 $("#id").keyup(function(){
                     $("#idCk").val("no");
@@ -110,6 +111,41 @@
             })
         </script>
         <script th:inline="javascript">
+            // ajax 처리
+            function idCheck() {
+                if ($("#id").val() == "") {
+                    alert("아이디를 입력하지 않았습니다.");
+                    $("#idCk").val("no")
+                    $("#msg").text("아이디를 입력하지 않았습니다.");
+                    $("#id").focus();
+                    return false;
+                }
+                var params = {"id": $("#id").val()};
+                $.ajax({
+                    url: "/user/idCheckPro",   //아이디가 전송되어질 곳
+                    type: "post",
+                    data: JSON.stringify(params),
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (result) {
+                        var idPass = result;
+                        if (idPass == false) {
+                            $("#idCk").val("no")
+                            $("#msg").text("이미 사용중인 아이디입니다.");
+                            alert("이미 사용중인 아이디입니다.");
+                            $("#id").focus();
+                        } else if (idPass == true) {
+                            $("#idCk").val("yes");
+                            $("#msg").text("사용 가능한 아이디입니다.");
+                            alert("사용 가능한 아이디입니다.");
+                        } else if (idPass == "") {
+                            $("#idCk").val("no")
+                            $("#msg").text("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
+                        }
+                    }
+                });
+            }
+            // 회원가입 버튼 클릭 시
             function join(f) {
                 // alert(f.pw.value);
                 // alert(f.pwcheck.value);
@@ -117,48 +153,13 @@
                     alert("비밀번호가일치하지않습니다.");
                     return false;
                 }
-                alert("idCk Value"+$("#idCk").val());
+                // alert("idCk Value : "+$("#idCk").val());
 
                 if($("#idCk").val()!="yes"){
                     alert("아이디 중복 확인을 하지 않으셨습니다.");
-                    return false;
                     $("#msg").text("아이디 중복 확인을 하지 않으셨습니다.");
-                }
-                return false;
-            }
-
-            function idCheck(){
-                if($("#id").val()==""){
-                    alert("아이디를 입력하지 않았습니다.");
-                    $("#idCk").val("no")
-                    $("#msg").text("아이디를 입력하지 않았습니다.");
-                    $("#id").focus();
                     return false;
                 }
-                var params = {"id" : $("#id").val()};
-                $.ajax({
-                    url:"/user/idCheckPro",   //아이디가 전송되어질 곳
-                    type:"post",
-                    data:JSON.stringify(params),
-                    dataType:"json",
-                    contentType:"application/json",
-                    success : function(result) {
-                        var idPass = result;
-                        if(idPass == false){
-                            $("#idCk").val("no")
-                            $("#msg").text("이미 사용중인 아이디입니다.");
-                            alert("이미 사용중인 아이디입니다.");
-                            $("#id").focus();
-                        } else if(idPass == true){
-                            $("#idCk").val("yes");
-                            $("#msg").text("사용 가능한 아이디입니다.");
-                            alert("사용 가능한 아이디입니다.");
-                        } else if(idPass==""){
-                            $("#idCk").val("no")
-                            $("#msg").text("아이디가 확인되지 않았습니다. 다시 시도하시기 바랍니다.");
-                        }
-                    }
-                });
             }
         </script>
     </div>
