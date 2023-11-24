@@ -71,6 +71,7 @@
                 </th>
                 <td>
                     <input type="text" name="addr1" id="addr1" placeholder="주소를 입력해주세요." maxlength="30" required />
+                    <button type="button" id="post_btn" onclick="findAddr()">우편번호 검색</button>
                 </td>
             </tr>
             <tr>
@@ -99,7 +100,7 @@
             </tr>
         </table>
         </form>
-        <script>
+        <script th:inline="javascript">
             // 아이디 칸에 키보드 입력 시
             $(document).ready(function(){
                 $("#id").keyup(function(){
@@ -109,8 +110,7 @@
                     return false;
                 })
             })
-        </script>
-        <script th:inline="javascript">
+
             // ajax 처리
             function idCheck() {
                 if ($("#id").val() == "") {
@@ -145,6 +145,25 @@
                     }
                 });
             }
+
+            // 우편번호 검색
+            function findAddr(){
+                new daum.Postcode({
+                    oncomplete:function(data){
+                        console.log(data);
+                        var roadAddr = data.roadAddress;
+                        var jibunAddr = data.jibunAddress;
+                        document.getElementById("postcode").value = data.zonecode;
+                        if(roadAddr !== ''){
+                            document.getElementById("addr1").value = roadAddr;
+                        } else if(jibunAddr !== ''){
+                            document.getElementById("addr1").value = jibunAddr;
+                        }
+                        document.getElementById("addr2").focus();
+                    }
+                }).open();
+            }
+
             // 회원가입 버튼 클릭 시
             function join(f) {
                 // alert(f.pw.value);
@@ -162,6 +181,7 @@
                 }
             }
         </script>
+        <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     </div>
 </body>
 </html>

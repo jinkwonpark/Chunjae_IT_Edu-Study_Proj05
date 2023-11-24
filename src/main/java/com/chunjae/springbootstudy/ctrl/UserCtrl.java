@@ -56,6 +56,7 @@ public class UserCtrl {
                 System.out.println(httpSession.getAttribute("sid"));
                 log.info("pwcheck 맞음");
             } else {
+//                login.setMsg(request.getParameter(s))
                 model.addAttribute("msg", "error02");
                 return "redirect:/user/login";
             }
